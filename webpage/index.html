@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+  /*
+   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making a resume with pandoc. Inspired by moderncv.
+   *
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   */
+  
+  /* Whole document */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 10px;
+  }
+  
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      color: #757575;
+      text-align:center;
+      margin-bottom:15px;
+  }
+  h1:hover {
+      background-color: #757575;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Titles of categories */
+  h2 {
+      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+      color: #397249;
+  }
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      /* This is called "rulecolor" in the ConTeXt stylesheet. */
+      background-color: #9CB770;
+  }
+  h2:hover {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 17%;
+      /*font-weight: bold;*/
+  }
+  dd {
+      margin-left: 17%;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:7px;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+  
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #397249;
+  }
+  a:hover, a:active {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+  
+  table {
+      width: 100%;
+  }
+  </style>
+</head>
+<body>
+<h1 id="cs583a-deep-learning">CS583A: Deep Learning</h1>
+<blockquote>
+<p>Shusen Wang</p>
+</blockquote>
+<h2 id="description">Description</h2>
+<p>Deep learning (DL) is a family of the most powerful and popular machine learning (ML) methods and has wide real-world applications such as face recognition, machine translation, self-driving car, recommender system, playing the Go game, etc. This course is designed for students either with or without ML background. The course will cover the fundamental ML, computer vision (CV), and natural language (NLP) problems and DL tools for solving the problems. This is a practical course; the students will be able to use DL methods for solving real-world ML, CV, and NLP problems.</p>
+<h2 id="syllabus-and-slides">Syllabus and Slides</h2>
+<ol style="list-style-type: decimal">
+<li><p><strong>Machine learning basics.</strong> This part briefly introduces the fundamental ML problems-- regression, classification, dimensionality reduction, and clustering-- and the traditional ML models and numerical algorithms for solving the problems.</p>
+<p>-- Fundamental ML problems. [<a href="">slides</a> to appear]</p>
+<p>-- Regression. [<a href="">slides</a> to appear]</p>
+<p>-- Classification. [<a href="">slides</a> to appear]</p>
+<p>-- Dimensionality reduction. [<a href="">slides</a> to appear]</p></li>
+<li><p><strong>Neural network basics.</strong> This part covers the multilayer perceptron, backpropagation, and deep learning libraries, with focus on Keras.</p>
+<p>-- Multilayer perceptron. [<a href="">slides</a> to appear]</p>
+<p>-- Keras. [<a href="">slides</a> to appear]</p></li>
+<li><p><strong>Convolutional neural networks (CNNs).</strong> This part is focused on CNNs and its application to computer vision problems.</p>
+<p>-- CNN basics. [<a href="">slides</a> to appear]</p>
+<p>-- Advanced topics on CNNs. [<a href="">slides</a> to appear]</p>
+<p>-- Popular CNN architectures. [<a href="">slides</a> to appear]</p>
+<p>-- Style transfer. [<a href="">slides</a> to appear]</p></li>
+<li><p><strong>More image generation methods.</strong> This part covers two image generation approaches in addition to VAE. The training of neural networks takes fixed images (X) as inputs and optimize w.r.t. the weights (W). Conversely, one can fix the network's weights (W) and optimize w.r.t. the input X. In this way, new images are generated to maximize (or minimize) some function; the application includes attacking neural networks and deep dream. Another very different approach is the generative adversarial network (GAN).</p>
+<p>-- Attack neural networks. [<a href="">slides</a> to appear]</p>
+<p>-- Deep dream. [<a href="">slides</a> to appear]</p>
+<p>-- Generative adversarial network (GAN). [<a href="">slides</a> to appear]</p></li>
+<li><p><strong>Recurrent neural networks (RNNs).</strong> This part introduces RNNs and its applications in natural language processing (NLP).</p>
+<p>-- Text processing. [<a href="">slides</a> to appear]</p>
+<p>-- RNN basics and LSTM. [<a href="">slides</a> to appear]</p>
+<p>-- Text generation. [<a href="">slides</a> to appear]</p>
+<p>-- Machine translation. [<a href="">slides</a> to appear]</p></li>
+<li><p><strong>Recommender system.</strong> This part is focused on the collaborative filtering approach to recommendation based on the user-item rating data. This part covers matrix completion methods and neural network approaches.</p>
+<p>-- Recommender system. [<a href="">slides</a> to appear]</p></li>
+</ol>
+<h2 id="homework-and-project">Homework and Project</h2>
+<ul>
+<li><p><strong>HM0</strong>: setup Python, Jupyter, TensorFlow and Keras. (Submission is not required.)</p>
+<p>-- Install Python 3.3 or greater. Do not use Python 2.X.</p>
+<p>-- Install Jupyter notebook: [<a href="http://jupyter.org/install">guide</a>]</p>
+<p>-- Install TensorFlow: [<a href="https://www.tensorflow.org/install/">guide</a>]</p>
+<p>-- Install Keras: [<a href="https://keras.io/#installation">guide</a>]</p>
+<p>-- Make sure Keras has been properly installed: [<a href="https://keras.io/#getting-started-30-seconds-to-keras">run the code</a>]</p></li>
+<li><p><strong>HM1</strong>: to be announced.</p></li>
+<li><p><strong>Project</strong>: Every student must participate in any one of the <a href="https://www.kaggle.com/competitions">Kaggle competitions</a>.</p>
+<p>-- <strong>Submissions</strong>: source code and a document describing the methodology, implementation, and performance evaluation, etc.</p>
+<p>-- <strong>Teamwork policy</strong>: A student had better work on her/his own project. Teamwork (up to 3 students) is allowed if the competition requires a heavy workload; the workload and team size will be considered in the grading.</p>
+<p>-- <strong>Grading policy</strong>: The grading will depend on the ranking (percentage) in the competition, code, documentation, presentation, and <span class="math inline">$\frac{workload}{team size}$</span>. Active and inactive competitions are both allowed, but a high rank in an active competition will receive additional reward (up to 10 points per team).</p></li>
+</ul>
+<p>The students will submit a document describing their methodology, implementation, and performance evaluation. The grading will depend on the ranking (percentage) in the competition, code, documentation, and presentation.</p>
+<h2 id="textbooks">Textbooks</h2>
+<p><strong>Required</strong>:</p>
+<ul>
+<li>Francois Chollet. Deep learning with Python. Manning Publications Co., 2017. (Available online.)</li>
+</ul>
+<p><strong>Recommended</strong>:</p>
+<ul>
+<li><p>Goodfellow, Y. Bengio, A. Courville, Y. Bengio. Deep learning. MIT press, 2016. (Available online.)</p></li>
+<li><p>M. Mohri, A. Rostamizadeh, and A. Talwalkar. Foundations of machine learning. MIT press, 2012.</p></li>
+<li><p>J. Friedman, T. Hastie, and R. Tibshirani. The elements of statistical learning. Springer series in statistics, 2001. (Available online.)</p></li>
+</ul>
+<h2 id="grading-policy">Grading Policy</h2>
+<p><strong>Grading percentages</strong>:</p>
+<ul>
+<li><p>Homework 60%</p></li>
+<li><p>Final 15%</p></li>
+<li><p>Project 15%</p></li>
+<li><p>Quizzes 10%</p></li>
+</ul>
+<p><strong>Late penalty</strong>: Late submissions of assignments or project document for whatever reason will be punished. 1% of the score of an assignment/project will be deducted per day. For example, if an assignment is submitted 15 days and 1 minute later than the deadline (counted as 16 days) and it gets a grade of 95%, then the score after the deduction will be: 95% - 16% = 79%.</p>
+</body>
+</html>
