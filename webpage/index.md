@@ -154,6 +154,10 @@ Textbooks
 
 **Recommended**:
 
+- Y. Nesterov. Introductory Lectures on Convex Optimization Book. Springer, 2013. (Available online.)
+
+- D. S. Watkins. Fundamentals of Matrix Computations. John Wiley & Sons, 2004.
+
 - I. Goodfellow, Y. Bengio, A. Courville, Y. Bengio. Deep learning. MIT press, 2016. (Available online.)
     
 - M. Mohri, A. Rostamizadeh, and A. Talwalkar. Foundations of machine learning. MIT press, 2012.
