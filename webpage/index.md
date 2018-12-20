@@ -39,7 +39,7 @@ Schedule
 Office Hours
 ---------
 
-3:00 - 5:00 PM, each Thursday, North Building 205
+3:00 - 5:00 PM, each Thursday, North Building 205, except for the following dates:
 
 - Jan 31, **CANCELED**
 - Feb 28, **CANCELED**
