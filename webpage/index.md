@@ -11,6 +11,40 @@ Description
 Deep learning (DL) is a family of the most powerful and popular machine learning (ML) methods and has wide real-world applications such as face recognition, machine translation, self-driving car, recommender system, playing the Go game, etc. This course is designed for students either with or without ML background. The course will cover the fundamental ML, computer vision (CV), and natural language (NLP) problems and DL tools for solving the problems. This is a practical course; the students will be able to use DL methods for solving real-world ML, CV, and NLP problems.
 
 
+
+Schedule
+---------
+
+- Jan 24, North Building XXX (TBD)
+
+    -- Fundamental ML problems
+    
+    -- Regression
+
+- Jan 31, **CANCELED** due to the instructor's conference traveling
+
+- Feb 7, North Building XXX (TBD)
+
+    -- Regression (cont.)
+    
+    -- Classification.
+    
+- Feb 14, North Building XXX (TBD)
+
+- Feb 21, North Building XXX (TBD)
+
+- Feb 28, **CANCELED** due to the instructor's conference traveling
+
+
+Office Hours
+---------
+
+3:00 - 5:00 PM, each Thursday, North Building 205
+
+- Jan 31, **CANCELED**
+- Feb 28, **CANCELED**
+
+
 Syllabus and Slides
 ---------
 
@@ -117,7 +151,7 @@ Textbooks
 
 **Recommended**:
 
-- Goodfellow, Y. Bengio, A. Courville, Y. Bengio. Deep learning. MIT press, 2016. (Available online.)
+- I. Goodfellow, Y. Bengio, A. Courville, Y. Bengio. Deep learning. MIT press, 2016. (Available online.)
     
 - M. Mohri, A. Rostamizadeh, and A. Talwalkar. Foundations of machine learning. MIT press, 2012.
     
