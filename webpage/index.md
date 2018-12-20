@@ -1,4 +1,4 @@
-CS583A: Deep Learning
+CS583: Deep Learning
 ============
 
 
@@ -110,12 +110,14 @@ This part covers matrix completion methods and neural network approaches.
 
 
 
-Homework and Project
+Homework
 ---------
 
-- **HM0**: setup Python, Jupyter, TensorFlow and Keras. (Submission is not required.)
+- **HM0**: setup Python, Jupyter, TensorFlow and Keras.
 
-    -- Install Python 3.3 or greater. Do not use Python 2.X.
+    -- **Submission is not required**
+
+    -- Install Python 3.3 or greater. Do not use Python 2.X
     
     -- Install Jupyter notebook: [[guide](http://jupyter.org/install)]
     
@@ -127,18 +129,19 @@ Homework and Project
 
 - **HM1**: to be announced.
 
+    -- **Deadline: 11:59 PM, Feb XXX**
 
-- **Project**: Every student must participate in any one of the [Kaggle competitions](https://www.kaggle.com/competitions). 
 
-    -- **Submissions**: source code and a document describing the methodology, implementation, and performance evaluation, etc.
-    
-    -- **Teamwork policy**: A student had better work on her/his own project. Teamwork (up to 3 students) is allowed if the competition requires a heavy workload; the workload and team size will be considered in the grading.
-    
-    -- **Grading policy**: The grading will depend on the ranking (percentage) in the competition, code, documentation, presentation, and $\frac{workload}{team size}$. Active and inactive competitions are both allowed, but a high rank in an active competition will receive additional reward (up to 10 points per team).
-    
 
+Project
+---------
+Every student must participate in any one of the [Kaggle competitions](https://www.kaggle.com/competitions). 
+
+- **Submissions**: source code and a document describing the methodology, implementation, and performance evaluation, etc.
     
-The students will submit a document describing their methodology, implementation, and performance evaluation. The grading will depend on the ranking (percentage) in the competition, code, documentation, and presentation.
+- **Teamwork policy**: A student had better work on her/his own project. Teamwork (up to 3 students) is allowed if the competition requires a heavy workload; the workload and team size will be considered in the grading.
+    
+- **Grading policy**: The grading will depend on the ranking (percentage) in the competition, code, documentation, presentation, and $\frac{workload}{team size}$. Active and inactive competitions are both allowed, but a high rank in an active competition will receive additional reward (up to 10 points per team).
 
 
 
