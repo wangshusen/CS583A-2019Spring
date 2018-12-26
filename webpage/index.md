@@ -20,6 +20,14 @@ Schedule
     -- Fundamental ML problems
     
     -- Regression
+    
+- Jan 24, Homework 0 is assigned.
+
+    -- [[Click here for the assignment](../homework/HM0/HM.pdf)] 
+    
+    -- Submission is not required. 
+    
+    -- Deadline: finish it before the 1st Quiz. (Otherwise, you might fail.)
 
 - Jan 31, **CANCELED** due to the instructor's conference traveling
 
@@ -27,7 +35,9 @@ Schedule
 
     -- Regression (cont.)
     
-    -- Classification.
+    -- Classification
+    
+    -- The 1st **Quiz**.
     
 - Feb 14, North Building XXX (TBD)
 
@@ -106,30 +116,6 @@ This part is focused on the collaborative filtering approach to recommendation b
 This part covers matrix completion methods and neural network approaches. 
 
     -- Recommender system. [[slides]() to appear]
-
-
-
-
-Homework
----------
-
-- **HM0**: setup Python, Jupyter, TensorFlow and Keras.
-
-    -- **Submission is not required**
-
-    -- Install Python 3.3 or greater. Do not use Python 2.X
-    
-    -- Install Jupyter notebook: [[guide](http://jupyter.org/install)]
-    
-    -- Install TensorFlow: [[guide](https://www.tensorflow.org/install/)]
-    
-    -- Install Keras: [[guide](https://keras.io/#installation)]
-    
-    -- Make sure Keras has been properly installed: [[run the code](https://keras.io/#getting-started-30-seconds-to-keras)]
-
-- **HM1**: to be announced.
-
-    -- **Deadline: 11:59 PM, Feb XXX**
 
 
 

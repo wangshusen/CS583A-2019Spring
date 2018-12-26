@@ -29,7 +29,7 @@ Further Reading
 
 Self-study matrix algebra by reading the following articles:
 
-1. [Matrix Calculus](Reading/MatrixCalculus.pdf). (Required.)
+1. [Matrix Calculus](Reading/MatrixCalculus.pdf). (Required. Print and bring it to the quiz.)
     
 2. Appendix A of [Convex Optimization]() (Optional. It is available online; Google it.)
     
