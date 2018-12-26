@@ -2,8 +2,9 @@ CS583: Deep Learning
 ============
 
 
->  Shusen Wang
+> Instructor: Shusen Wang
 
+> Classroom: North Building XXX (TBD)
 
 
 Description
@@ -15,7 +16,7 @@ Deep learning (DL) is a family of the most powerful and popular machine learning
 Schedule
 ---------
 
-- Jan 24, North Building XXX (TBD)
+- Jan 24, Lecture 1
 
     -- Fundamental ML problems
     
@@ -31,7 +32,7 @@ Schedule
 
 - Jan 31, **CANCELED** due to the instructor's conference traveling
 
-- Feb 7, North Building XXX (TBD)
+- Feb 7, Lecture 2
 
     -- Regression (cont.)
     
@@ -39,9 +40,9 @@ Schedule
     
     -- The 1st **Quiz**.
     
-- Feb 14, North Building XXX (TBD)
+- Feb 14, Lecture 3
 
-- Feb 21, North Building XXX (TBD)
+- Feb 21, Lecture 4
 
 - Feb 28, **CANCELED** due to the instructor's conference traveling
 
@@ -61,9 +62,9 @@ Syllabus and Slides
 1. **Machine learning basics.**
 This part briefly introduces the fundamental ML problems-- regression, classification, dimensionality reduction, and clustering-- and the traditional ML models and numerical algorithms for solving the problems.
 
-    -- Fundamental ML problems. [[slides]() to appear]
+    -- ML basics. [[slides](../slides/1_ML_Basics.pdf)]
     
-    -- Regression. [[slides]() to appear]
+    -- Regression. [[slides-1](../slides/2_Regression_1.pdf) [slides-2]()]
     
     -- Classification. [[slides]() to appear]
     
