@@ -24,7 +24,7 @@ Schedule
     
 - Jan 24, Homework 0 is assigned.
 
-    -- [[Click here for the assignment](../homework/HM0/HM.pdf)] 
+    -- [Click here for the assignment](../homework/HM0/HM.pdf)
     
     -- Submission is not required. 
     
@@ -64,7 +64,7 @@ This part briefly introduces the fundamental ML problems-- regression, classific
 
     -- ML basics. [[slides](../slides/1_ML_Basics.pdf)]
     
-    -- Regression. [[slides-1](../slides/2_Regression_1.pdf) [slides-2]()]
+    -- Regression. [[slides-1](../slides/2_Regression_1.pdf) [slides-2](../slides/2_Regression_2.pdf)]
     
     -- Classification. [[slides]() to appear]
     
