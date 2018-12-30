@@ -40,6 +40,12 @@ Schedule
     -- Submission is not required. 
     
     -- Deadline: finish it before the 1st Quiz. (Otherwise, you might fail.)
+    
+- Jan 24, Homework 1 is assigned (available on Canvas).
+    
+    -- Submission: submit to Canvas.
+    
+    -- Deadline: Feb 12.
 
 - Jan 31, **CANCELED** due to the instructor's conference traveling
 
@@ -49,9 +55,13 @@ Schedule
     
     -- Classification
     
-    -- The 1st **Quiz**.
-    
 - Feb 14, Lecture 3
+
+    -- Classification (cont.)
+    
+    -- Dimensionality reduction
+    
+    -- The 1st **Quiz**.
 
 - Feb 21, Lecture 4
 
