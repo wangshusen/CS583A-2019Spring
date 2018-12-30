@@ -11,6 +11,17 @@ Description
 ---------
 Deep learning (DL) is a family of the most powerful and popular machine learning (ML) methods and has wide real-world applications such as face recognition, machine translation, self-driving car, recommender system, playing the Go game, etc. This course is designed for students either with or without ML background. The course will cover the fundamental ML, computer vision (CV), and natural language (NLP) problems and DL tools for solving the problems. This is a practical course; the students will be able to use DL methods for solving real-world ML, CV, and NLP problems.
 
+**Meeting Time:**
+
+- Thursday, 6:30 - 9:00 PM, North Building XXX (TBD)
+
+- The classes on these dates are canceled: Jan 31, Feb 28
+
+**Office Hours:**
+
+- Thursday, 3:00 - 5:00 PM, North Building 205
+
+- The office hours on these dates are canceled: Jan 31, Feb 28
 
 
 Schedule
@@ -47,14 +58,6 @@ Schedule
 - Feb 28, **CANCELED** due to the instructor's conference traveling
 
 
-Office Hours
----------
-
-North Building 205, 3:00 - 5:00 PM, every Thursday, except for the following dates:
-
-- Jan 31, **CANCELED**
-- Feb 28, **CANCELED**
-
 
 Syllabus and Slides
 ---------
@@ -89,7 +92,14 @@ This part is focused on CNNs and its application to computer vision problems.
     -- Style transfer. [[slides]() to appear]
 
 
-4. **More image generation methods.**
+4. **Autoencoders.**
+This part introduces autoencoders for dimensionality reduction and image generation.
+
+    -- Autoencoder for dimensionality reduction.[[slides]() to appear]
+    
+    -- Variational Autoencoders (VAEs) for image generation. [[slides]() to appear]
+
+5. **More image generation methods.**
 This part covers two image generation approaches in addition to VAE.
 The training of neural networks takes fixed images (X) as inputs and optimize w.r.t. the weights (W). Conversely, one can fix the network's weights (W) and optimize w.r.t. the input X. In this way, new images are generated to maximize (or minimize) some function; the application includes attacking neural networks and deep dream.
 Another very different approach is the generative adversarial network (GAN).
@@ -101,7 +111,7 @@ Another very different approach is the generative adversarial network (GAN).
     -- Generative adversarial network (GAN). [[slides]() to appear]
 
 
-5. **Recurrent neural networks (RNNs).**
+6. **Recurrent neural networks (RNNs).**
 This part introduces RNNs and its applications in natural language processing (NLP).
 
     -- Text processing. [[slides]() to appear]
@@ -112,7 +122,7 @@ This part introduces RNNs and its applications in natural language processing (N
     
     -- Machine translation. [[slides]() to appear]
 
-5. **Recommender system.**
+7. **Recommender system.**
 This part is focused on the collaborative filtering approach to recommendation based on the user-item rating data.
 This part covers matrix completion methods and neural network approaches. 
 
@@ -158,13 +168,13 @@ Grading Policy
 
 **Grading percentages**:
 
-- Homework 60\%
+- Homework 50\%
 
 - Final 15\%
 
-- Project 15\%
+- Project 20\%
 
-- Quizzes 10\%
+- Quizzes 15\%
 
 **Late penalty**:
 
