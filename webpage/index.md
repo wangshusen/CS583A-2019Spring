@@ -66,7 +66,7 @@ This part briefly introduces the fundamental ML problems-- regression, classific
     
     -- Regression. [[slides-1](../slides/2_Regression_1.pdf) [slides-2](../slides/2_Regression_2.pdf)]
     
-    -- Classification. [[slides]() to appear]
+    -- Classification. [[slides-1](../slides/3_Classification_1.pdf) [slides-2](../slides/3_Classification_2.pdf) [slides-3](../slides/3_Classification_3.pdf) [slides-4](../slides/3_Classification_4.pdf)]
     
     -- Dimensionality reduction. [[slides]() to appear]
     
