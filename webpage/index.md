@@ -150,13 +150,19 @@ This part covers matrix completion methods and neural network approaches.
 
 Project
 ---------
-Every student must participate in any one of the [Kaggle competitions](https://www.kaggle.com/competitions). 
+Every student must participate in one [Kaggle competition](https://www.kaggle.com/competitions). 
 
-- **Submissions**: source code and a document describing the methodology, implementation, and performance evaluation, etc.
+- **Details**: [click here](../project/Project/proj.pdf)
+
+- **Deadlines**
+
+    -- (Not required.) Submit a preliminary version to Canvas before April 21th if you want to compete for the presentation and bonus.     
+    -- Submit the final version to Canvas before June 1st. 
+
+- **Submissions**: Put your source code and report to a Github repository and submit the links to Canvas.
     
-- **Teamwork policy**: A student had better work on her/his own project. Teamwork (up to 3 students) is allowed if the competition requires a heavy workload; the workload and team size will be considered in the grading.
+- **Teamwork policy**: You had better work on your own project. Teamwork (up to 3 students) is allowed if the competition has a heavy workload; the workload and team size will be considered in the grading.
     
-- **Grading policy**: The grading will depend on the ranking (percentage) in the competition, code, documentation, presentation, and $\frac{workload}{team size}$. Active and inactive competitions are both allowed, but a high rank in an active competition will receive additional reward (up to 10 points per team).
 
 
 
@@ -193,6 +199,8 @@ Grading Policy
 - Project 20\%
 
 - Quizzes 15\%
+
+- Bonus (up to 10\%)
 
 **Late penalty**:
 
