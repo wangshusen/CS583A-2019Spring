@@ -8,7 +8,7 @@ Requirements
 
 - Every student must participate in any one of the [Kaggle competitions](https://www.kaggle.com/competitions)
 
-- You are highly encouraged to choose active competition. Inactive competitions are allowed, but they are considered less challenging and will earn you fewer scores.
+- You are highly encouraged to choose active competition. Inactive competitions are allowed, but they are considered less challenging and will earn you fewer scores. (Some competitions have ended, but late submission is still allowed. Late submission is regarded as active.)
 
 - You must try several different methods to solve the problem. The method you finally choose for the competition does not have to be a deep neural network; however, you must try at least one deep learning method and implement it using TensorFlow or Keras.
 
