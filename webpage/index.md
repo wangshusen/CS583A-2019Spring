@@ -33,7 +33,7 @@ Schedule
     
     -- Regression
     
-- Jan 24, Homework 0 is assigned.
+- Jan 24, **Homework 0** is assigned.
 
     -- [Click here for the assignment](../homework/HM0/HM.pdf)
     
@@ -41,7 +41,7 @@ Schedule
     
     -- Deadline: finish it before the 1st Quiz. (Otherwise, you might fail.)
     
-- Jan 24, Homework 1 is assigned (available on Canvas).
+- Jan 24, **Homework 1** is assigned (available on Canvas).
     
     -- Submission: submit to Canvas.
     
@@ -63,7 +63,7 @@ Schedule
     
     -- The 1st **Quiz**.
     
-- Feb 14, Homework 2 is assigned (available on Canvas).
+- Feb 14, **Homework 2** is assigned (available on Canvas).
     
     -- Submission: submit to Canvas.
     
