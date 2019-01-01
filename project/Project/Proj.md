@@ -1,0 +1,44 @@
+Course Project
+============
+
+
+
+Requirements
+---------
+
+- Every student must participate in any one of the [Kaggle competitions](https://www.kaggle.com/competitions)
+
+- You are highly encouraged to choose active competition. Inactive competitions are allowed, but they are considered less challenging and will earn you fewer scores.
+
+- You must try several different methods to solve the problem. The method you finally choose for the competition does not have to be a deep neural network; however, you must try at least one deep learning method and implement it using TensorFlow or Keras.
+
+- You must compare your fancy methods with simple baselines, e.g., random guess, all-positive, all-negative, simple linear models, and beat the baselines. The evaluation metric must be the one required by the competition.
+
+
+Submissions
+---------
+
+- **Source code**. You must create a Github repository (or multiple repositories). Submit the URL of the repository to Canvas. Do NOT submit zip/tar packages.
+
+- **Report**. You must create a PDF document using LaTeX, Markdown, or Jupyper notebook; here is [a Latex template](https://github.com/wangshusen/CS583A-2019Spring/tree/master/project/LatexTemplate) and [a sample report](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/LatexTemplate/project.pdf). (Create a PDF document using Microsoft Word is NOT acceptable.) Please make the document short and concise! Page limit: 3~10 pages. Put the PDF file in your Github repository and submit the URL to Canvas.
+
+- **Scores and ranking.** Report your scores and ranking in the public leaderboard and the private leaderboard (if available).
+
+
+Teamwork
+---------
+
+- You are encouraged to work on your own project. Teamwork (up to 3 students) is allowed if the Kaggle competition has a heavy workload; $\frac{workload}{team size}$ will be considered in the grading.
+
+- If the project is teamwork, all the team members will get the same score.
+
+
+Bonus
+---------
+
+- Getting a very high ranking (percentile) in active competition will receive up to 5 bonus scores (to the total).
+
+- Some excellent projects will be chosen to give presentations and will be rewarded up to 5 bonus scores (to the total).
+
+- If a team ranks top 1\% in active competition, every team member will get "A", disregarding their homework, quizzes, and the final.
+
