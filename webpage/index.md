@@ -45,7 +45,7 @@ Schedule
     
     -- Submission: submit to Canvas.
     
-    -- Deadline: Feb 12.
+    -- Deadline: Feb 19.
 
 - Jan 31, **CANCELED** due to the instructor's conference traveling
 
@@ -62,6 +62,12 @@ Schedule
     -- Dimensionality reduction
     
     -- The 1st **Quiz**.
+    
+- Feb 14, Homework 2 is assigned (available on Canvas).
+    
+    -- Submission: submit to Canvas.
+    
+    -- Deadline: Mar 12.
 
 - Feb 21, Lecture 4
 
@@ -80,6 +86,8 @@ This part briefly introduces the fundamental ML problems-- regression, classific
     -- Regression. [[slides-1](../slides/2_Regression_1.pdf) [slides-2](../slides/2_Regression_2.pdf)]
     
     -- Classification. [[slides-1](../slides/3_Classification_1.pdf) [slides-2](../slides/3_Classification_2.pdf) [slides-3](../slides/3_Classification_3.pdf) [slides-4](../slides/3_Classification_4.pdf)]
+    
+    -- Regularizations. [[slides-1](../slides/4_Optimization.pdf)]
     
     -- Dimensionality reduction. [[slides]() to appear]
     
