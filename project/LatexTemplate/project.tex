@@ -197,7 +197,7 @@ escapeinside={\%*}{*)},         % if you want to add a comment within your code
 
 \section{Summary}
 
-[Problem descriptions:] We pariticipe an inactive/active Kaggle competition of classifying cats and dogs based on photos. 
+[Problem descriptions:] We pariticipe an inactive/late submission/active Kaggle competition of classifying cats and dogs based on photos. 
 [Methodology:] The final model we choose is ResNet50, a deep convolutional neural network architecture, which takes $256\times 256$ images as input and outputs the class labels.
 [Implementation:] We implement the convolutional neural network using Keras (or we directly use the ResNet50 provided by Keras) and run the code on a MacBook Pro with one Intel i7 CPU and 32 GB memory (or a workstation with 4 NVIDIA GeForce XXX GPUs.)
 [Evaluation metric:] Performance is evaluated on the classification accuracy.
@@ -276,10 +276,36 @@ Figure~\ref{fig:convergence} plots the the convergence curves on 80\% training d
 
 
 
+
+
 \section{Compared Methods}
 
 
 [Try different methods (with brief descriptions) and report their performance.]
+
+
+
+\section{Outcome}
+
+
+We participated in an active/late submission/inactive competition.
+We rank 100/312 in the public leaderboard and 101/312 in the private leaderboard.
+The screenshots are in Figure~\ref{fig:leaderboard}.
+
+
+
+
+
+%---------------------------------Figure---------------------------------%
+\begin{figure}
+	\begin{center}
+		\subfigure[Private leaderboard.]{\includegraphics[width=0.48\textwidth]{private.png}}
+		\subfigure[Public leaderboard.]{\includegraphics[width=0.48\textwidth]{public.png}}
+	\end{center}
+	\caption{Our rankings in the leaderboard.}
+	\label{fig:leaderboard}
+\end{figure}
+%---------------------------------Figure---------------------------------%
 
 
 
