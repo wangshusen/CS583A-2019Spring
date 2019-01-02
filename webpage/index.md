@@ -89,7 +89,7 @@ This part briefly introduces the fundamental ML problems-- regression, classific
     
     -- Regularizations. [[slides-1](../slides/4_Optimization.pdf)  [slides-2](../slides/4_Regularizations.pdf)]
     
-    -- Dimensionality reduction. [[slides]() to appear]
+    -- Dimensionality reduction. [[slides-1](../slides/5_SVD.pdf)]
     
 2. **Neural network basics.**
 This part covers the multilayer perceptron, backpropagation, and deep learning libraries, with focus on Keras.
