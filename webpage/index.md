@@ -4,8 +4,6 @@ CS583: Deep Learning
 
 > Instructor: Shusen Wang
 
-> Classroom: North Building XXX (TBD)
-
 
 Description
 ---------
@@ -13,7 +11,7 @@ Deep learning (DL) is a family of the most powerful and popular machine learning
 
 **Meeting Time:**
 
-- Thursday, 6:30 - 9:00 PM, North Building XXX (TBD)
+- Thursday, 6:30 - 9:00 PM, Babbio Center 221
 
 - The classes on these dates are canceled: Jan 31, Feb 28
 
