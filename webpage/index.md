@@ -103,7 +103,8 @@ This part briefly introduces the fundamental ML problems-- regression, classific
 2. **Neural network basics.**
 This part covers the multilayer perceptron, backpropagation, and deep learning libraries, with focus on Keras.
 
-    -- Multilayer perceptron. [[slides]() to appear]
+    -- Multilayer perceptron and backpropagation. 
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/6_NeuralNet_1.pdf)]
     
     -- Keras. [[slides]() to appear]
     
