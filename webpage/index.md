@@ -33,7 +33,7 @@ Schedule
     
 - Jan 24, **Homework 0** is assigned.
 
-    -- [Click here for the assignment](../homework/HM0/HM.pdf)
+    -- [Click here for the assignment](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM0/HM.pdf)
     
     -- Submission is not required. 
     
@@ -79,15 +79,26 @@ Syllabus and Slides
 1. **Machine learning basics.**
 This part briefly introduces the fundamental ML problems-- regression, classification, dimensionality reduction, and clustering-- and the traditional ML models and numerical algorithms for solving the problems.
 
-    -- ML basics. [[slides](../slides/1_ML_Basics.pdf)]
+    -- ML basics. [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/1_ML_Basics.pdf)]
     
-    -- Regression. [[slides-1](../slides/2_Regression_1.pdf) [slides-2](../slides/2_Regression_2.pdf)]
+    -- Regression. 
+    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/2_Regression_1.pdf)] 
+    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/2_Regression_2.pdf)]
     
-    -- Classification. [[slides-1](../slides/3_Classification_1.pdf) [slides-2](../slides/3_Classification_2.pdf) [slides-3](../slides/3_Classification_3.pdf) [slides-4](../slides/3_Classification_4.pdf)]
+    -- Classification. 
+    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_1.pdf)]
+    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_2.pdf)] 
+    [[slides-3](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_3.pdf)] 
+    [[slides-4](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_4.pdf)]
     
-    -- Regularizations. [[slides-1](../slides/4_Optimization.pdf)  [slides-2](../slides/4_Regularizations.pdf)]
+    -- Regularizations. 
+    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/4_Optimization.pdf)]
+    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/4_Regularizations.pdf)]
     
-    -- Dimensionality reduction. [[slides-1](../slides/5_SVD.pdf) [slides-2](../slides/5_PCA.pdf) [slides-3](../slides/5_MatrixComputations.pdf)]
+    -- Dimensionality reduction. 
+    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_SVD.pdf)] 
+    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_PCA.pdf)] 
+    [[slides-3](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_MatrixComputations.pdf)]
     
 2. **Neural network basics.**
 This part covers the multilayer perceptron, backpropagation, and deep learning libraries, with focus on Keras.
@@ -150,7 +161,7 @@ Project
 ---------
 Every student must participate in one [Kaggle competition](https://www.kaggle.com/competitions). 
 
-- **Details**: [click here](../project/Project/proj.pdf)
+- **Details**: [click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/Project/proj.pdf)
 
 - **Deadlines**
 
