@@ -106,7 +106,8 @@ This part covers the multilayer perceptron, backpropagation, and deep learning l
     -- Multilayer perceptron and backpropagation. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/6_NeuralNet_1.pdf)]
     
-    -- Keras. [[slides]() to appear]
+    -- Keras. 
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/6_NeuralNet_2.pdf)]
     
 3. **Convolutional neural networks (CNNs).**
 This part is focused on CNNs and its application to computer vision problems.
