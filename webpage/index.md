@@ -113,7 +113,8 @@ This part covers the multilayer perceptron, backpropagation, and deep learning l
 This part is focused on CNNs and its application to computer vision problems.
 
     -- CNN basics.
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_1.pdf)]
+    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_1.pdf)]
+    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_2.pdf)]
     
     -- Advanced topics on CNNs. [[slides]() to appear]
     
