@@ -115,6 +115,8 @@ This part is focused on CNNs and its application to computer vision problems.
     -- CNN basics.
     [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_1.pdf)]
     [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_2.pdf)]
+    [[slides-3](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_3.pdf)]
+    [[slides-4](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_4.pdf)]
     
     -- Advanced topics on CNNs. [[slides]() to appear]
     
