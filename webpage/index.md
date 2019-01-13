@@ -7,7 +7,6 @@ CS583: Deep Learning
 
 Description
 ---------
-Deep learning (DL) is a family of the most powerful and popular machine learning (ML) methods and has wide real-world applications such as face recognition, machine translation, self-driving car, recommender system, playing the Go game, etc. This course is designed for students either with or without ML background. The course will cover the fundamental ML, computer vision (CV), and natural language (NLP) problems and DL tools for solving the problems. This is a practical course; the students will be able to use DL methods for solving real-world ML, CV, and NLP problems.
 
 **Meeting Time:**
 
@@ -15,11 +14,24 @@ Deep learning (DL) is a family of the most powerful and popular machine learning
 
 - The classes on these dates are canceled: Jan 31, Feb 28
 
+
 **Office Hours:**
 
 - Thursday, 3:00 - 5:00 PM, North Building 205
 
 - The office hours on these dates are canceled: Jan 31, Feb 28
+
+
+**Prerequisite:**
+
+- Elementary linear algebra, e.g., matrix multiplication, eigenvalue decomposition, and matrix norms.
+
+- Elementary calculus, e.g., convex function, differentiation of scalar functions, first derivative, and second derivative.
+
+- Python programming (especially the Numpy library) and Jupyter Notebook.
+
+
+**Goal:** This is a practical course; the students will be able to use DL methods for solving real-world ML, CV, and NLP problems.
 
 
 Schedule
@@ -37,7 +49,7 @@ Schedule
     
     -- Submission is not required. 
     
-    -- Deadline: finish it before the 1st Quiz. (Otherwise, you might fail.)
+    -- Deadline: finish it before the 1st Quiz. (Otherwise, you will probably fail.)
     
 - Jan 24, **Homework 1** is assigned (available on Canvas).
     
@@ -115,12 +127,13 @@ This part is focused on CNNs and its application to computer vision problems.
     -- CNN basics.
     [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_1.pdf)]
     [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_2.pdf)]
+    [[slides-3](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_3.pdf)]
     
     -- Advanced topics on CNNs. 
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_3.pdf)]
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_4.pdf)]
     
     -- Popular CNN architectures.
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_4.pdf)]
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_5.pdf)]
     
     -- Style transfer. [[slides]() to appear]
 
