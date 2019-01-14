@@ -121,6 +121,12 @@ This part covers the multilayer perceptron, backpropagation, and deep learning l
     -- Keras. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/6_NeuralNet_2.pdf)]
     
+    -- Further reading:
+    [[activation functions](https://adl1995.github.io/an-overview-of-activation-functions-used-in-neural-networks.html)]
+    [[loss functions](https://isaacchanghau.github.io/post/loss_functions/)]
+    [[parameter initialization](https://isaacchanghau.github.io/post/weight_initialization/)]
+    [[optimization algorithms](https://isaacchanghau.github.io/post/parameters_update/)]
+    
 3. **Convolutional neural networks (CNNs).**
 This part is focused on CNNs and its application to computer vision problems.
 
@@ -135,7 +141,9 @@ This part is focused on CNNs and its application to computer vision problems.
     -- Popular CNN architectures.
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_5.pdf)]
     
-    -- Style transfer. [[slides]() to appear]
+    -- Further reading: 
+    [style transfer (Section 8.1, Chollet's book)]
+    [visualize CNN (Section 5.4, Chollet's book)]
 
 
 4. **Autoencoders.**
@@ -160,13 +168,23 @@ Another very different approach is the generative adversarial network (GAN).
 6. **Recurrent neural networks (RNNs).**
 This part introduces RNNs and its applications in natural language processing (NLP).
 
-    -- Text processing. [[slides]() to appear]
+    -- Text processing.
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_1.pdf)]
     
     -- RNN basics and LSTM. [[slides]() to appear]
     
     -- Text generation. [[slides]() to appear]
     
     -- Machine translation. [[slides]() to appear]
+    
+    -- Attention. 
+    [[slides]() to appear]
+    
+    
+    -- Further reading: 
+    [[attention](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)]
+    [[GloVe: Global Vectors for Word Representation](http://www.aclweb.org/anthology/D14-1162)]
+    [[Neural Word Embedding as Implicit Matrix Factorization](https://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf)]
 
 7. **Recommender system.**
 This part is focused on the collaborative filtering approach to recommendation based on the user-item rating data.
