@@ -12,7 +12,7 @@ Description
 
 - Thursday, 6:30 - 9:00 PM, Babbio Center 221
 
-- The classes on these dates are canceled: Jan 31, Feb 28
+- The classes on these dates are canceled: Jan 31
 
 
 **Office Hours:**
@@ -55,7 +55,7 @@ Schedule
     
     -- Submission: submit to Canvas.
     
-    -- Deadline: Feb 19.
+    -- Deadline: Feb 24.
 
 - Jan 31, **CANCELED** due to the instructor's conference traveling
 
@@ -70,18 +70,58 @@ Schedule
     -- Classification (cont.)
     
     -- Dimensionality reduction
-    
-    -- The 1st **Quiz**.
-    
+        
 - Feb 14, **Homework 2** is assigned (available on Canvas).
     
     -- Submission: submit to Canvas.
     
-    -- Deadline: Mar 12.
+    -- Deadline: Mar 14.
 
 - Feb 21, Lecture 4
 
-- Feb 28, **CANCELED** due to the instructor's conference traveling
+- Feb 28, **Quiz 1** (coverage: linear algebra, optimization, and ML basics).
+
+- Mar 7, **Project proposal deadline**
+
+- Mar 7, Lecture 5
+	
+	-- Neural network basics
+	
+	-- Keras
+	
+- Mar 14, Lecture 6
+
+	-- Neural network basics (cont.)
+
+	-- Convolutional neural networks
+
+- Mar 21, Spring Break, no class
+
+- Mar 28, Lecture 7
+
+	-- Convolutional neural networks (cont.)
+
+- Apr 4, Lecture 8
+
+	-- Convolutional neural networks (cont.)
+	
+- Apr 11, Lecture 9
+
+	-- Autoencoders
+	
+- Apr 18, Lecture 10
+
+	-- Recurrent neural networks
+	
+- Apr 25, Lecture 11
+
+	-- Recurrent neural networks (cont.)
+	
+- May 2, Lecture 12
+
+	-- Recurrent neural networks (cont.)
+	
+
 
 
 
@@ -153,7 +193,7 @@ This part introduces autoencoders for dimensionality reduction and image generat
     
     -- Variational Autoencoders (VAEs) for image generation. [[slides]() to appear]
 
-5. **More image generation methods.**
+5. **More image generation methods.** **(Optional, depending on the progress.)**
 This part covers two image generation approaches in addition to VAE.
 The training of neural networks takes fixed images (X) as inputs and optimize w.r.t. the weights (W). Conversely, one can fix the network's weights (W) and optimize w.r.t. the input X. In this way, new images are generated to maximize (or minimize) some function; the application includes attacking neural networks and deep dream.
 Another very different approach is the generative adversarial network (GAN).
@@ -171,9 +211,11 @@ This part introduces RNNs and its applications in natural language processing (N
     -- Text processing.
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_1.pdf)]
     
-    -- RNN basics and LSTM. [[slides]() to appear]
-    
-    -- Text generation. [[slides]() to appear]
+    -- RNN basics and LSTM.
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_2.pdf)]
+        
+    -- Text generation.
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_3.pdf)]
     
     -- Machine translation. [[slides]() to appear]
     
@@ -186,7 +228,7 @@ This part introduces RNNs and its applications in natural language processing (N
     [[GloVe: Global Vectors for Word Representation](http://www.aclweb.org/anthology/D14-1162)]
     [[Neural Word Embedding as Implicit Matrix Factorization](https://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf)]
 
-7. **Recommender system.**
+7. **Recommender system.** **(Optional, depending on the progress.)**
 This part is focused on the collaborative filtering approach to recommendation based on the user-item rating data.
 This part covers matrix completion methods and neural network approaches. 
 
