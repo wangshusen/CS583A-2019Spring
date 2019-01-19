@@ -209,18 +209,20 @@ Another very different approach is the generative adversarial network (GAN).
 This part introduces RNNs and its applications in natural language processing (NLP).
 
     -- Text processing.
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_1.pdf)]
-    
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_1.pdf)] 
+       
     -- RNN basics and LSTM.
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_2.pdf)]
-        
+    [[reference](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)]
+   
     -- Text generation.
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_3.pdf)]
     
-    -- Machine translation. [[slides]() to appear]
+    -- Machine translation. 
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_4.pdf)]
     
     -- Attention. 
-    [[slides]() to appear]
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_5.pdf)]
     
     
     -- Further reading: 
