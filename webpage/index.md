@@ -12,14 +12,20 @@ Description
 
 - Thursday, 6:30 - 9:00 PM, Babbio Center 221
 
-- The classes on these dates are canceled: Jan 31
+- **The classes on these dates are canceled: Jan 31**
 
 
 **Office Hours:**
 
 - Thursday, 3:00 - 5:00 PM, North Building 205
 
-- The office hours on these dates are canceled: Jan 31, Feb 28
+- **The office hours on these dates are canceled: Jan 31, Feb 28**
+
+**Contact the Instructor:**
+
+- For questions regarding grading, talk to the instructor during office hours or send him emails.
+
+- For any other questions, come during the office hours; the instructor will NOT reply such emails.
 
 
 **Prerequisite:**
@@ -54,8 +60,6 @@ Schedule
 - Jan 24, **Homework 1** is assigned (available on Canvas).
     
     -- Submission: submit to Canvas.
-    
-    -- Deadline: Feb 24.
 
 - Jan 31, **CANCELED** due to the instructor's conference traveling
 
@@ -74,14 +78,16 @@ Schedule
 - Feb 14, **Homework 2** is assigned (available on Canvas).
     
     -- Submission: submit to Canvas.
-    
-    -- Deadline: Mar 14.
 
 - Feb 21, Lecture 4
 
+- Feb 24, **Deadline for Homework 1**
+
 - Feb 28, **Quiz 1** (coverage: linear algebra, optimization, and ML basics).
 
-- Mar 7, **Project proposal deadline**
+- Mar 7, **Deadline for roject proposal**
+
+	-- Submission: submit to Canvas.
 
 - Mar 7, Lecture 5
 	
@@ -94,6 +100,8 @@ Schedule
 	-- Neural network basics (cont.)
 
 	-- Convolutional neural networks
+	
+- Mar 14, **Deadline for Homework 2**
 
 - Mar 21, Spring Break, no class
 
@@ -189,20 +197,20 @@ This part is focused on CNNs and its application to computer vision problems.
 4. **Autoencoders.**
 This part introduces autoencoders for dimensionality reduction and image generation.
 
-    -- Autoencoder for dimensionality reduction.[[slides]() to appear]
+    -- Autoencoder for dimensionality reduction.
     
-    -- Variational Autoencoders (VAEs) for image generation. [[slides]() to appear]
+    -- Variational Autoencoders (VAEs) for image generation. 
 
 5. **More image generation methods.** **(Optional, depending on the progress.)**
 This part covers two image generation approaches in addition to VAE.
 The training of neural networks takes fixed images (X) as inputs and optimize w.r.t. the weights (W). Conversely, one can fix the network's weights (W) and optimize w.r.t. the input X. In this way, new images are generated to maximize (or minimize) some function; the application includes attacking neural networks and deep dream.
 Another very different approach is the generative adversarial network (GAN).
 
-    -- Attack neural networks. [[slides]() to appear]
+    -- Attack neural networks. 
     
-    -- Deep dream. [[slides]() to appear]
-    
-    -- Generative adversarial network (GAN). [[slides]() to appear]
+    -- Deep dream. 
+        
+    -- Generative adversarial network (GAN). 
 
 
 6. **Recurrent neural networks (RNNs).**
@@ -223,10 +231,11 @@ This part introduces RNNs and its applications in natural language processing (N
     
     -- Attention. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_5.pdf)]
+    [[reference-1](https://distill.pub/2016/augmented-rnns/)]
+    [[reference-2](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)]
     
     
     -- Further reading: 
-    [[attention](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)]
     [[GloVe: Global Vectors for Word Representation](http://www.aclweb.org/anthology/D14-1162)]
     [[Neural Word Embedding as Implicit Matrix Factorization](https://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf)]
 
@@ -234,8 +243,7 @@ This part introduces RNNs and its applications in natural language processing (N
 This part is focused on the collaborative filtering approach to recommendation based on the user-item rating data.
 This part covers matrix completion methods and neural network approaches. 
 
-    -- Recommender system. [[slides]() to appear]
-
+    -- Recommender system. 
 
 
 Project
@@ -246,8 +254,11 @@ Every student must participate in one [Kaggle competition](https://www.kaggle.co
 
 - **Deadlines**
 
-    -- (Not required.) Submit a preliminary version to Canvas before April 21th if you want to compete for the presentation and bonus.     
-    -- Submit the final version to Canvas before June 1st. 
+	* Submit a proposal to Canvas before Mar 7.
+
+    * (Not required.) Submit a preliminary version to Canvas before April 21th if you want to compete for the presentation and bonus.     
+    
+    * Submit the final version to Canvas before the final. (May be extended.) 
 
 - **Submissions**: Put your source code and report to a Github repository and submit the links to Canvas.
     
@@ -296,6 +307,6 @@ Grading Policy
 
 - Late submissions of assignments or project document for whatever reason will be punished. 1\% of the score of an assignment/project will be deducted per day. For example, if an assignment is submitted 15 days and 1 minute later than the deadline (counted as 16 days) and it gets a grade of 95\%, then the score after the deduction will be: 95\% - 16\% = 79\%.
 
-- June 1 is the firm deadline of all the homework. Submissions later than June 1 will not be accepted.
+- June 1 is the firm deadline for all the homework. Submissions later than June 1 will not be graded.
 
 
