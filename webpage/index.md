@@ -213,6 +213,7 @@ This part is focused on CNNs and its application to computer vision problems.
 This part introduces autoencoders for dimensionality reduction and image generation.
 
     -- Autoencoder for dimensionality reduction.
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/8_AE_1.pdf)]
     
     -- Variational Autoencoders (VAEs) for image generation. 
 
