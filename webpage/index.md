@@ -85,7 +85,7 @@ Schedule
 
 - Feb 28, **Quiz 1** (coverage: linear algebra, optimization, and ML basics).
 
-- Mar 7, **Deadline for roject proposal**
+- Mar 7, **Deadline for project proposal**
 
 	-- Submission: submit to Canvas.
 
@@ -94,7 +94,13 @@ Schedule
 	-- Neural network basics
 	
 	-- Keras
+
+- Mar 7, **Homework 3** is assigned
 	
+	-- Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
+	
+    -- Submission: submit to Canvas.
+    
 - Mar 14, Lecture 6
 
 	-- Neural network basics (cont.)
@@ -113,6 +119,14 @@ Schedule
 
 	-- Convolutional neural networks (cont.)
 	
+- Apr 4, **Homework 4** is assigned
+	
+	-- Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
+	
+    -- Submission: submit to Canvas.
+    
+- Apr 7, **Deadline for Homework 3**
+
 - Apr 11, Lecture 9
 
 	-- Autoencoders
@@ -129,6 +143,7 @@ Schedule
 
 	-- Recurrent neural networks (cont.)
 	
+- May 4, **Deadline for Homework 4**
 
 
 
