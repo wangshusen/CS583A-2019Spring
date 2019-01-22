@@ -10,7 +10,7 @@ Description
 
 **Meeting Time:**
 
-- Thursday, 6:30 - 9:00 PM, Babbio Center 221
+- Thursday, 6:30 - 9:00 PM, Peirce Complex 116
 
 - **The classes on these dates are canceled: Jan 31**
 
