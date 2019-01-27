@@ -49,6 +49,8 @@ Schedule
     
     -- Regression
     
+    -- Classification 
+    
 - Jan 24, **Homework 0** is assigned.
 
     -- [Click here for the assignment](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM0/HM.pdf)
@@ -64,14 +66,10 @@ Schedule
 - Jan 31, **CANCELED** due to the instructor's conference traveling
 
 - Feb 7, Lecture 2
-
-    -- Regression (cont.)
     
-    -- Classification
+    -- Classification (cont.)
     
 - Feb 14, Lecture 3
-
-    -- Classification (cont.)
     
     -- Dimensionality reduction
         
@@ -216,6 +214,7 @@ This part introduces autoencoders for dimensionality reduction and image generat
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/8_AE_1.pdf)]
     
     -- Variational Autoencoders (VAEs) for image generation. 
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/8_AE_2.pdf)]
 
 5. **More image generation methods.** **(Optional, depending on the progress.)**
 This part covers two image generation approaches in addition to VAE.
