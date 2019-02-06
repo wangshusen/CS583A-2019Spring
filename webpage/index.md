@@ -69,9 +69,15 @@ Schedule
     
     -- Classification (cont.)
     
+    -- Regularization
+    
 - Feb 14, Lecture 3
     
     -- Dimensionality reduction
+    
+    -- Matrix computations
+    
+    -- Neural network basics
         
 - Feb 14, **Homework 2** is assigned (available on Canvas).
     
@@ -81,7 +87,11 @@ Schedule
 
 - Feb 24, **Deadline for Homework 1**
 
-- Feb 28, **Quiz 1** (coverage: linear algebra, optimization, and ML basics).
+- Feb 28, **Quiz 1**.
+
+	-- Coverage: linear algebra, optimization, and ML basics.
+	
+	-- Policy: No electronic device. Printed material is allowed. 
 
 - Mar 7, **Deadline for project proposal**
 
@@ -89,7 +99,7 @@ Schedule
 
 - Mar 7, Lecture 5
 	
-	-- Neural network basics
+	-- Neural network basics (cont.)
 	
 	-- Keras
 
@@ -165,8 +175,8 @@ This part briefly introduces the fundamental ML problems-- regression, classific
     [[slides-4](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_4.pdf)]
     
     -- Regularizations. 
-    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/4_Optimization.pdf)]
-    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/4_Regularizations.pdf)]
+    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Optimization.pdf)]
+    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Regularizations.pdf)]
     
     -- Dimensionality reduction. 
     [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_SVD.pdf)] 
