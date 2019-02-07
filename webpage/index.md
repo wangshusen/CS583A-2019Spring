@@ -179,9 +179,9 @@ This part briefly introduces the fundamental ML problems-- regression, classific
     [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Regularizations.pdf)]
     
     -- Dimensionality reduction. 
-    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_SVD.pdf)] 
-    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_PCA.pdf)] 
-    [[slides-3](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_MatrixComputations.pdf)]
+    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_DR_1.pdf)] 
+    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_DR_2.pdf)] 
+    [[slides-3](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_DR_3.pdf)]
     
 2. **Neural network basics.**
 This part covers the multilayer perceptron, backpropagation, and deep learning libraries, with focus on Keras.
