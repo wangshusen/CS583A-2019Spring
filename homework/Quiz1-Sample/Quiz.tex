@@ -1,0 +1,422 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsmath,amsthm,amsfonts}
+\usepackage{latexsym,graphicx}
+\usepackage{fullpage,color}
+\usepackage{url,hyperref}
+\usepackage{natbib}
+\usepackage{graphicx,subfigure}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{color}
+
+\numberwithin{equation}{section}
+
+\pagestyle{plain}
+
+\setlength{\oddsidemargin}{0in}
+\setlength{\topmargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{8.5in}
+
+\newtheorem{fact}{Fact}[section]
+\newtheorem{question}{Question}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{theorem}[lemma]{Theorem}
+\newtheorem{assumption}[lemma]{Assumption}
+\newtheorem{corollary}[lemma]{Corollary}
+\newtheorem{prop}[lemma]{Proposition}
+\newtheorem{claim}{Claim}[section]
+\newtheorem{remark}{Remark}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{prob}{Problem}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{property}{Property}[section]
+
+\def\A{{\bf A}}
+\def\a{{\bf a}}
+\def\B{{\bf B}}
+\def\bb{{\bf b}}
+\def\C{{\bf C}}
+\def\c{{\bf c}}
+\def\D{{\bf D}}
+\def\d{{\bf d}}
+\def\E{{\bf E}}
+\def\e{{\bf e}}
+\def\F{{\bf F}}
+\def\f{{\bf f}}
+\def\g{{\bf g}}
+\def\h{{\bf h}}
+\def\G{{\bf G}}
+\def\H{{\bf H}}
+\def\I{{\bf I}}
+\def\K{{\bf K}}
+\def\k{{\bf k}}
+\def\LL{{\bf L}}
+\def\M{{\bf M}}
+\def\m{{\bf m}}
+\def\N{{\bf N}}
+\def\n{{\bf n}}
+\def\PP{{\bf P}}
+\def\Q{{\bf Q}}
+\def\q{{\bf q}}
+\def\R{{\bf R}}
+\def\rr{{\bf r}}
+\def\S{{\bf S}}
+\def\s{{\bf s}}
+\def\T{{\bf T}}
+\def\tt{{\bf t}}
+\def\U{{\bf U}}
+\def\u{{\bf u}}
+\def\V{{\bf V}}
+\def\v{{\bf v}}
+\def\W{{\bf W}}
+\def\w{{\bf w}}
+\def\X{{\bf X}}
+\def\x{{\bf x}}
+\def\Y{{\bf Y}}
+\def\y{{\bf y}}
+\def\Z{{\bf Z}}
+\def\z{{\bf z}}
+\def\0{{\bf 0}}
+\def\1{{\bf 1}}
+
+
+
+\def\AM{{\mathcal A}}
+\def\CM{{\mathcal C}}
+\def\DM{{\mathcal D}}
+\def\EM{{\mathcal E}}
+\def\GM{{\mathcal G}}
+\def\FM{{\mathcal F}}
+\def\IM{{\mathcal I}}
+\def\JM{{\mathcal J}}
+\def\KM{{\mathcal K}}
+\def\LM{{\mathcal L}}
+\def\NM{{\mathcal N}}
+\def\OM{{\mathcal O}}
+\def\PM{{\mathcal P}}
+\def\SM{{\mathcal S}}
+\def\TM{{\mathcal T}}
+\def\UM{{\mathcal U}}
+\def\VM{{\mathcal V}}
+\def\WM{{\mathcal W}}
+\def\XM{{\mathcal X}}
+\def\YM{{\mathcal Y}}
+\def\RB{{\mathbb R}}
+\def\RBmn{{\RB^{m\times n}}}
+\def\EB{{\mathbb E}}
+\def\PB{{\mathbb P}}
+
+\def\TX{\tilde{\bf X}}
+\def\TA{\tilde{\bf A}}
+\def\tx{\tilde{\bf x}}
+\def\ty{\tilde{\bf y}}
+\def\TZ{\tilde{\bf Z}}
+\def\tz{\tilde{\bf z}}
+\def\hd{\hat{d}}
+\def\HD{\hat{\bf D}}
+\def\hx{\hat{\bf x}}
+\def\nysA{{\tilde{\A}_c^{\textrm{nys}}}}
+
+\def\alp{\mbox{\boldmath$\alpha$\unboldmath}}
+\def\bet{\mbox{\boldmath$\beta$\unboldmath}}
+\def\epsi{\mbox{\boldmath$\epsilon$\unboldmath}}
+\def\etab{\mbox{\boldmath$\eta$\unboldmath}}
+\def\ph{\mbox{\boldmath$\phi$\unboldmath}}
+\def\pii{\mbox{\boldmath$\pi$\unboldmath}}
+\def\Ph{\mbox{\boldmath$\Phi$\unboldmath}}
+\def\Ps{\mbox{\boldmath$\Psi$\unboldmath}}
+\def\ps{\mbox{\boldmath$\psi$\unboldmath}}
+\def\tha{\mbox{\boldmath$\theta$\unboldmath}}
+\def\Tha{\mbox{\boldmath$\Theta$\unboldmath}}
+\def\muu{\mbox{\boldmath$\mu$\unboldmath}}
+\def\Si{\mbox{\boldmath$\Sigma$\unboldmath}}
+\def\si{\mbox{\boldmath$\sigma$\unboldmath}}
+\def\Gam{\mbox{\boldmath$\Gamma$\unboldmath}}
+\def\Lam{\mbox{\boldmath$\Lambda$\unboldmath}}
+\def\De{\mbox{\boldmath$\Delta$\unboldmath}}
+\def\Ome{\mbox{\boldmath$\Omega$\unboldmath}}
+\def\Pii{\mbox{\boldmath$\Pi$\unboldmath}}
+\def\varepsi{\mbox{\boldmath$\varepsilon$\unboldmath}}
+\newcommand{\ti}[1]{\tilde{#1}}
+\def\Ncal{\mathcal{N}}
+\def\argmax{\mathop{\rm argmax}}
+\def\argmin{\mathop{\rm argmin}}
+
+\def\ALG{{\AM_{\textrm{col}}}}
+
+\def\bias{\mathsf{bias}}
+\def\var{\mathsf{var}}
+\def\sgn{\mathsf{sgn}}
+\def\tr{\mathsf{tr}}
+\def\rk{\mathrm{rank}}
+\def\nnz{\mathsf{nnz}}
+\def\poly{\mathrm{poly}}
+\def\diag{\mathsf{diag}}
+\def\Diag{\mathsf{Diag}}
+\def\const{\mathrm{Const}}
+\def\st{\mathsf{s.t.}}
+\def\vect{\mathsf{vec}}
+\def\sech{\mathrm{sech}}
+
+\newcommand{\red}[1]{{\color{red}#1}}
+
+
+
+\def\argmax{\mathop{\rm argmax}}
+\def\argmin{\mathop{\rm argmin}}
+
+\newenvironment{note}[1]{\medskip\noindent \textbf{#1:}}%
+        {\medskip}
+
+
+\newcommand{\etal}{{\em et al.}\ }
+\newcommand{\assign}{\leftarrow}
+\newcommand{\eps}{\epsilon}
+
+\newcommand{\opt}{\textrm{\sc OPT}}
+\newcommand{\script}[1]{\mathcal{#1}}
+\newcommand{\ceil}[1]{\lceil #1 \rceil}
+\newcommand{\floor}[1]{\lfloor #1 \rfloor}
+
+
+
+\lstset{ %
+extendedchars=false,            % Shutdown no-ASCII compatible
+language=Python,                % choose the language of the code
+xleftmargin=1em,
+xrightmargin=1em,
+basicstyle=\footnotesize,    % the size of the fonts that are used for the code
+tabsize=3,                            % sets default tabsize to 3 spaces
+numbers=left,                   % where to put the line-numbers
+numberstyle=\tiny,              % the size of the fonts that are used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it's 1 each line
+                                % will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code   %
+keywordstyle=\color[rgb]{0,0,1},                % keywords
+commentstyle=\color[rgb]{0.133,0.545,0.133},    % comments
+stringstyle=\color[rgb]{0.627,0.126,0.941},      % strings
+backgroundcolor=\color{white}, % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,                 % adds a frame around the code
+%captionpos=b,                   % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+%title=\lstname,                 % show the filename of files included with \lstinputlisting;
+%                                % also try caption instead of title
+mathescape=true,escapechar=?    % escape to latex with ?..?
+escapeinside={\%*}{*)},         % if you want to add a comment within your code
+%columns=fixed,                  % nice spacing
+%morestring=[m]',                % strings
+%morekeywords={%,...},%          % if you want to add more keywords to the set
+%    break,case,catch,continue,elseif,else,end,for,function,global,%
+%    if,otherwise,persistent,return,switch,try,while,...},%
+}
+
+
+\begin{document}
+
+%\setlength{\fboxrule}{.5mm}\setlength{\fboxsep}{1.2mm}
+%\newlength{\boxlength}\setlength{\boxlength}{\textwidth}
+%\addtolength{\boxlength}{-4mm}
+
+
+\title{CS583A: Quiz 1 (Sample Questions)}
+
+\author{{\bf Name}: ~~~~~~~~~\qquad ~~~~~ \qquad~~~~~~~~~}
+
+\date{ }
+
+\maketitle
+
+
+
+\paragraph{Policy:}
+Books and printed materials are allowed. Do not use electronic divice, including phone, laptop, and tablet.
+
+\paragraph{Hint:} (i) $\frac{\partial  e^a}{\partial a} = e^a$, (ii) $\frac{ \partial \log_e (a) }{\partial a  } = \frac{1}{a}$, (iii) $\frac{ \partial \frac{1}{a} }{\partial a  } = - \frac{1}{a^2}$, and (iv) $\frac{ \partial \cos (a) }{\partial a  } = - \sin (a)$.
+
+
+\paragraph{Q1 (12\%).} 
+	Let $\A$ be the $3 \times 3$ diagonal matrix:
+	\begin{equation*}
+	\A \; = \;
+	\diag\Big( \big[ 1, 2, 5 \big] \Big)
+	\; \triangleq \;
+	\left[
+	\begin{array}{ccc}
+	1 & 0 & 0 \\
+	0 & 2 & 0 \\
+	0 & 0 & 5 \\
+	\end{array}
+	\right]
+	\end{equation*}
+Caculate the following values:
+\begin{enumerate}
+	\item 
+	the trace:\\ ~\\~\\
+	$\tr (\A ) = $
+	\vspace{10mm}
+	\item 
+	the squared Frobenius-norm of $\A$: \\~\\
+	$\|\A\|_F^2 = $
+	\vspace{10mm}
+	\item 
+	the condition number of $\A$:\\~\\
+	$\kappa (\A ) = $
+	\vspace{10mm}
+	\item 
+	the rank of $\A$:\\~\\
+	$\rk (\A ) = $
+	\vspace{10mm}
+\end{enumerate}
+
+
+
+\paragraph{Q2 (16\%).} 
+Let $\sigma_1 = 5$, $\sigma_2 = 5$, $\sigma_3 = 3$, $\sigma_4 = 2$, and $\sigma_5 = 1$.
+Let $\{ \v_1 , \v_2 , \cdots , \v_5 \} \subset \RB^{100}$ be an orthonormal basis of some subspace.
+Let $\A = \sum_{i=1}^{5} \sigma_i \v_i \v_i^T \in \RB^{100\times 100}$.
+Caculate the following values:
+\begin{enumerate}
+	\item 
+	the squared Frobenius norm of $\A$:\\ ~\\~\\
+	$\| \A \|_F^2 = $
+	\vspace{10mm}
+	\item 
+	the matrix-vector product:\\ ~\\~\\
+	$\A \v_3 = $
+	\vspace{10mm}
+	\item
+	matrix rank:\\ ~\\~\\
+	$\rk (\A ) = $
+	\vspace{10mm}
+	\item 
+	Let $\B = \argmin_{\rk (\X) \leq 2} \| \A - \X \|_F^2$. 
+	Calculate the squared Frobenius norm distance: \\ ~ \\~\\
+	$\| \A - \B \|_F^2 = $
+	\vspace{10mm}
+\end{enumerate}
+
+
+
+
+\paragraph{Q3 (3\%).} 
+Let $f: \RB^d \mapsto \RB$ be a convex function.
+A local minimum of $\min_{\w} f(\w )$ is also a global minimum.
+\begin{itemize}
+	\item[A.]
+	The statement is true.
+	\item[B.]
+	The statement is false.
+\end{itemize}
+
+
+
+
+\paragraph{Q4 (3\%).} 
+The set $\{ \x \in \RB^{100} \: | \: \| \x \|_1 = 5 \} $ is a convex set.
+\begin{itemize}
+	\item[A.]
+	The statement is true.
+	\item[B.]
+	The statement is false.
+\end{itemize}
+
+
+
+\paragraph{Q5 (3\%).} 
+As we increase the model capacity (e.g., the number of layers of a convolutional neural network),
+the training error and test error both increase.
+What happens when we increase the model capacity?
+\begin{itemize}
+	\item[A.] Overfitting.
+	\item[B.] Underfitting.
+	\item[C.] None of above.
+\end{itemize}
+
+
+
+\paragraph{Q6 (3\%).} 
+Consider the following ridge regression model:
+\begin{equation*}
+\min_{\w} \; \frac{1}{2}\| \X \w - \y \|_2^2  + \frac{\gamma}{2} \| \w \|_2^2 ,
+\end{equation*}
+where $\gamma \geq 0$.
+The Hessian matrix is $\H = \X^T \X + \gamma \I_d$.
+As $\gamma$ grows, what will happen to $\kappa (\H)$ (the condition number of $\H$).
+\begin{itemize}
+	\item[A.]
+	The condition number increases.
+	\item[B.]
+	The condition number decreases.
+	\item[C.]
+	Both of the above are possible.
+	\item[D.]
+	Neither of the above are possible.
+\end{itemize}
+(Hint: The condition number of $\H$ is $\frac{ \sigma_{\max} (\X^T \X) + \gamma }{ \sigma_{\min} (\X^T \X) + \gamma } \geq 1$.)
+
+
+
+
+
+\paragraph{Q7 (3\%).} 
+Trained using the same samples and using the same computation time and memory,
+classification model $\mathcal{M}_1$ achieves a test accuracy $98\%$,
+while classification model $\mathcal{M}_2$ achieves a test accuracy $70\%$.
+Model $\mathcal{M}_1$ is very likely a better choice than model $\mathcal{M}_2$.
+\begin{itemize}
+	\item[A.]
+	The statement is true.
+	\item[B.]
+	The statement is false.
+\end{itemize}
+
+
+
+\newpage
+~~
+
+\newpage
+~~
+Detach this empty page and use it for calculation.
+Do NOT submit this page.
+
+\newpage
+~~
+
+\newpage
+~~
+Detach this empty page and use it for calculation.
+Do NOT submit this page.
+
+
+
+
+%\vspace{3mm}
+%\begin{lstlisting}
+%import numpy
+%
+%def rfm(x, s, sigma):
+%	n, d = x.shape
+%	a = numpy.random.standard_normal((d, s)) / sigma
+%	b = numpy.random.rand(1, s) * (2 * numpy.pi)
+%	c = numpy.dot(x, a) + b
+%	h = numpy.cos(c) * numpy.sqrt(2/s)
+%	return h
+%\end{lstlisting}
+%\vspace{3mm}
+
+%\newpage
+%\bibliographystyle{plain}
+%
+%%\markboth{\bibname}{\bibname}
+%\bibliography{matrix}
+
+
+\end{document}
