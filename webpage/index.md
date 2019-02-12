@@ -87,13 +87,13 @@ Schedule
 
 - Feb 24, **Deadline for Homework 1**
 
-- Feb 28, **Quiz 1**.
+- Feb 28, **Quiz 1** (No lecture).
 
 	-- Coverage: linear algebra, optimization, and ML basics.
 	
 	-- Policy: No electronic device. Printed material is allowed. 
 	
-	-- Sample question: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Quiz1-Sample/Quiz.pdf)]
+	-- Sample questions: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Quiz1-Sample/Quiz.pdf)]
 
 - Mar 7, **Deadline for project proposal**
 
