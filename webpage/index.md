@@ -73,6 +73,8 @@ Schedule
     -- Regularization
     
 - Feb 14, Lecture 3
+
+	-- Clustering
     
     -- Dimensionality reduction
     
@@ -189,6 +191,10 @@ This part briefly introduces the fundamental ML problems-- regression, classific
     -- Regularizations. 
     [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Optimization.pdf)]
     [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Regularizations.pdf)]
+    
+    -- Clustering. 
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/4_Clustering.pdf)] 
+    
     
     -- Dimensionality reduction. 
     [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_DR_1.pdf)] 
