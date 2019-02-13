@@ -15,6 +15,7 @@ Description
 - **The classes on these dates are canceled: Jan 31**
 
 
+
 **Office Hours:**
 
 - Thursday, 3:00 - 5:00 PM, North Building 205
@@ -85,6 +86,12 @@ Schedule
 
 - Feb 21, Lecture 4
 
+	-- Neural network basics (cont.)
+	
+	-- Keras
+	
+	-- Convolutional neural networks
+
 - Feb 24, **Deadline for Homework 1**
 
 - Feb 28, **Quiz 1** (No lecture).
@@ -101,10 +108,9 @@ Schedule
 
 - Mar 7, Lecture 5
 	
-	-- Neural network basics (cont.)
+	-- Convolutional neural networks (cont.)
 	
-	-- Keras
-
+	
 - Mar 7, **Homework 3** is assigned
 	
 	-- Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
@@ -113,9 +119,9 @@ Schedule
     
 - Mar 14, Lecture 6
 
-	-- Neural network basics (cont.)
-
-	-- Convolutional neural networks
+	-- Convolutional neural networks (cont.)
+	
+	-- Autoencoders
 	
 - Mar 14, **Deadline for Homework 2**
 
@@ -123,11 +129,13 @@ Schedule
 
 - Mar 28, Lecture 7
 
-	-- Convolutional neural networks (cont.)
+	-- Autoencoders (cont.)
+	
+	-- Recurrent neural networks
 
 - Apr 4, Lecture 8
 
-	-- Convolutional neural networks (cont.)
+	-- Recurrent neural networks (cont.)
 	
 - Apr 4, **Homework 4** is assigned
 	
@@ -139,19 +147,21 @@ Schedule
 
 - Apr 11, Lecture 9
 
-	-- Autoencoders
+	-- Recurrent neural networks (cont.)
+	
+	-- Recommender system
 	
 - Apr 18, Lecture 10
 
-	-- Recurrent neural networks
+	-- Image generation
 	
 - Apr 25, Lecture 11
 
-	-- Recurrent neural networks (cont.)
+	-- Image generation (cont.)
 	
 - May 2, Lecture 12
 
-	-- Recurrent neural networks (cont.)
+	-- TBD
 	
 - May 4, **Deadline for Homework 4**
 
@@ -213,6 +223,9 @@ This part is focused on CNNs and its application to computer vision problems.
     
     -- Popular CNN architectures.
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_5.pdf)]
+    
+    -- Face recognition.
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_6.pdf)]
     
     -- Further reading: 
     [style transfer (Section 8.1, Chollet's book)]
