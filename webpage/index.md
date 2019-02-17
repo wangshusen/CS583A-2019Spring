@@ -307,7 +307,8 @@ This part introduces RNNs and its applications in natural language processing (N
 This part is focused on the collaborative filtering approach to recommendation based on the user-item rating data.
 This part covers matrix completion methods and neural network approaches. 
 
-    * Recommender system. 
+    * Collaborative filtering. 
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/11_Recommender.pdf)]
 
 
 Project
