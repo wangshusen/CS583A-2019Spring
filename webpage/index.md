@@ -73,8 +73,6 @@ Schedule
     -- Regularization
     
 - Feb 14, Lecture 3
-
-	-- Clustering
     
     -- Dimensionality reduction
     
@@ -88,15 +86,17 @@ Schedule
 
 - Feb 21, Lecture 4
 
-	-- Neural network basics (cont.)
+	-- Clustering
 	
 	-- Keras
+	
+	-- Preparation for Quiz
 	
 	-- Convolutional neural networks
 
 - Feb 24, **Deadline for Homework 1**
 
-- Feb 28, **Quiz 1** (No lecture).
+- Feb 28, **Quiz** (No lecture).
 
 	-- Coverage: linear algebra, optimization, and ML basics.
 	
@@ -111,7 +111,6 @@ Schedule
 - Mar 7, Lecture 5
 	
 	-- Convolutional neural networks (cont.)
-	
 	
 - Mar 7, **Homework 3** is assigned
 	
@@ -157,16 +156,34 @@ Schedule
 
 	-- Image generation
 	
+
+- Apr 21, **Deadline for signing up for project presentation**
+
+	-- Voluntary. 
+	
+	-- Up to 5 bonus scores to the total.
+	
+    -- Submission: submit to Canvas.
+
+
 - Apr 25, Lecture 11
 
 	-- Image generation (cont.)
 	
-- May 2, Lecture 12
+- May 2, **Final Exam (Tentative)**
 
-	-- TBD
+	-- Coverage: linear algebra, optimization, ML basics, neural network basics, CNN, and RNN.
+	
+	-- Policy: No electronic device. Printed material is allowed. 
 	
 - May 4, **Deadline for Homework 4**
 
+- May 19, **Deadline for Course Project**
+
+    -- Submission: submit to Canvas.
+
+
+- Some time between May 9-20, Project Presentation
 
 
 
@@ -176,41 +193,42 @@ Syllabus and Slides
 1. **Machine learning basics.**
 This part briefly introduces the fundamental ML problems-- regression, classification, dimensionality reduction, and clustering-- and the traditional ML models and numerical algorithms for solving the problems.
 
-    -- ML basics. [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/1_ML_Basics.pdf)]
+    * ML basics. [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/1_ML_Basics.pdf)]
     
-    -- Regression. 
+    * Regression. 
     [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/2_Regression_1.pdf)] 
     [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/2_Regression_2.pdf)]
     
-    -- Classification. 
+    * Classification. 
     [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_1.pdf)]
     [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_2.pdf)] 
     [[slides-3](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_3.pdf)] 
     [[slides-4](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_4.pdf)]
     
-    -- Regularizations. 
+    * Regularizations. 
     [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Optimization.pdf)]
     [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Regularizations.pdf)]
     
-    -- Clustering. 
+    * Clustering. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/4_Clustering.pdf)] 
     
-    
-    -- Dimensionality reduction. 
+    * Dimensionality reduction. 
     [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_DR_1.pdf)] 
     [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_DR_2.pdf)] 
-    [[slides-3](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_DR_3.pdf)]
+    
+    * Scientific computing libraries.
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_DR_3.pdf)]
     
 2. **Neural network basics.**
 This part covers the multilayer perceptron, backpropagation, and deep learning libraries, with focus on Keras.
 
-    -- Multilayer perceptron and backpropagation. 
+    * Multilayer perceptron and backpropagation. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/6_NeuralNet_1.pdf)]
     
-    -- Keras. 
+    * Keras. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/6_NeuralNet_2.pdf)]
     
-    -- Further reading:
+    * Further reading:
     [[activation functions](https://adl1995.github.io/an-overview-of-activation-functions-used-in-neural-networks.html)]
     [[loss functions](https://isaacchanghau.github.io/post/loss_functions/)]
     [[parameter initialization](https://isaacchanghau.github.io/post/weight_initialization/)]
@@ -219,21 +237,21 @@ This part covers the multilayer perceptron, backpropagation, and deep learning l
 3. **Convolutional neural networks (CNNs).**
 This part is focused on CNNs and its application to computer vision problems.
 
-    -- CNN basics.
+    * CNN basics.
     [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_1.pdf)]
     [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_2.pdf)]
     [[slides-3](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_3.pdf)]
     
-    -- Advanced topics on CNNs. 
+    * Advanced topics on CNNs. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_4.pdf)]
     
-    -- Popular CNN architectures.
+    * Popular CNN architectures.
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_5.pdf)]
     
-    -- Face recognition.
+    * Face recognition.
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_6.pdf)]
     
-    -- Further reading: 
+    * Further reading: 
     [style transfer (Section 8.1, Chollet's book)]
     [visualize CNN (Section 5.4, Chollet's book)]
 
@@ -241,10 +259,10 @@ This part is focused on CNNs and its application to computer vision problems.
 4. **Autoencoders.**
 This part introduces autoencoders for dimensionality reduction and image generation.
 
-    -- Autoencoder for dimensionality reduction.
+    * Autoencoder for dimensionality reduction.
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/8_AE_1.pdf)]
     
-    -- Variational Autoencoders (VAEs) for image generation. 
+    * Variational Autoencoders (VAEs) for image generation. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/8_AE_2.pdf)]
 
 5. **More image generation methods.** **(Optional, depending on the progress.)**
@@ -252,36 +270,36 @@ This part covers two image generation approaches in addition to VAE.
 The training of neural networks takes fixed images (X) as inputs and optimize w.r.t. the weights (W). Conversely, one can fix the network's weights (W) and optimize w.r.t. the input X. In this way, new images are generated to maximize (or minimize) some function; the application includes attacking neural networks and deep dream.
 Another very different approach is the generative adversarial network (GAN).
 
-    -- Attack neural networks. 
+    * Attack neural networks. 
     
-    -- Deep dream. 
+    * Deep dream. 
         
-    -- Generative adversarial network (GAN). 
+    * Generative adversarial network (GAN). 
 
 
 6. **Recurrent neural networks (RNNs).**
 This part introduces RNNs and its applications in natural language processing (NLP).
 
-    -- Text processing.
+    * Text processing.
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_1.pdf)] 
        
-    -- RNN basics and LSTM.
+    * RNN basics and LSTM.
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_2.pdf)]
     [[reference](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)]
    
-    -- Text generation.
+    * Text generation.
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_3.pdf)]
     
-    -- Machine translation. 
+    * Machine translation. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_4.pdf)]
     
-    -- Attention. 
+    * Attention. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_5.pdf)]
     [[reference-1](https://distill.pub/2016/augmented-rnns/)]
     [[reference-2](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)]
     
     
-    -- Further reading: 
+    * Further reading: 
     [[GloVe: Global Vectors for Word Representation](http://www.aclweb.org/anthology/D14-1162)]
     [[Neural Word Embedding as Implicit Matrix Factorization](https://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf)]
 
@@ -289,26 +307,18 @@ This part introduces RNNs and its applications in natural language processing (N
 This part is focused on the collaborative filtering approach to recommendation based on the user-item rating data.
 This part covers matrix completion methods and neural network approaches. 
 
-    -- Recommender system. 
+    * Recommender system. 
 
 
 Project
 ---------
 Every student must participate in one [Kaggle competition](https://www.kaggle.com/competitions). 
 
-- **Details**: [click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/Project/proj.pdf)
-
-- **Deadlines**
-
-	* Submit a proposal to Canvas before Mar 7.
-
-    * (Not required.) Submit a preliminary version to Canvas before April 21th if you want to compete for the presentation and bonus.     
-    
-    * Submit the final version to Canvas before the final. (May be extended.) 
-
-- **Submissions**: Put your source code and report to a Github repository and submit the links to Canvas.
-    
+- **Details**: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/Project/proj.pdf)]
+   
 - **Teamwork policy**: You had better work on your own project. Teamwork (up to 3 students) is allowed if the competition has a heavy workload; the workload and team size will be considered in the grading.
+
+- **Grading policy**: see the tentative evaluation form [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/Evaluation/Evaluation.pdf)]
     
 
 
@@ -353,6 +363,6 @@ Grading Policy
 
 - Late submissions of assignments or project document for whatever reason will be punished. 1\% of the score of an assignment/project will be deducted per day. For example, if an assignment is submitted 15 days and 1 minute later than the deadline (counted as 16 days) and it gets a grade of 95\%, then the score after the deduction will be: 95\% - 16\% = 79\%.
 
-- June 1 is the firm deadline for all the homework. Submissions later than June 1 will not be graded.
+- June 1 is the firm deadline for all the homework and the course project. Submissions later than June 1 will not be graded.
 
 
