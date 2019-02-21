@@ -4,6 +4,8 @@ CS583: Deep Learning
 
 > Instructor: Shusen Wang
 
+> TA: Yao Xiao
+
 
 Description
 ---------
