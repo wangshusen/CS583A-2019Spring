@@ -106,10 +106,6 @@ Schedule
 	
 	-- Sample questions: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Quiz1-Sample/Quiz.pdf)]
 
-- Mar 7, **Deadline for project proposal**
-
-	-- Submission: submit to Canvas.
-
 - Mar 7, Lecture 5
 	
 	-- Convolutional neural networks (cont.)
@@ -119,6 +115,14 @@ Schedule
 	-- Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
 	
     -- Submission: submit to Canvas.
+    
+    
+- Extended to Mar 8 (originally Mar 7), **Deadline for project proposal**
+
+	-- Submission: Everyone must submit a proposal to Canvas, even if it is teamwork.
+	
+	-- The finally participated competition is supposed be the same as in the proposal. If otherwise, convincing explanation and evidence must be provided to avoid penalty.
+	
     
 - Mar 14, Lecture 6
 
@@ -172,20 +176,26 @@ Schedule
 
 	-- Image generation (cont.)
 	
-- May 2, **Final Exam (Tentative)**
+- May 2, **Final Exam**
 
-	-- Coverage: linear algebra, optimization, ML basics, neural network basics, CNN, and RNN.
+	-- Coverage: linear algebra, optimization, ML basics, neural network basics, CNN, RNN, Python programming, and Keras.
 	
 	-- Policy: No electronic device. Printed material is allowed. 
 	
 - May 4, **Deadline for Homework 4**
 
+- May 9, **Project Presentation**
+
+	-- Time and location: the same as the class.
+	
+	-- Only the selected groups are required to attend.
+	
+	-- If you are confident that you will get A without the bonus, you can email the instructor to cancel your presentation. But the cancelation request must be made 48 hours prior to the presentation.
+
 - May 19, **Deadline for Course Project**
 
     -- Submission: submit to Canvas.
 
-
-- Some time between May 9-20, Project Presentation
 
 
 
