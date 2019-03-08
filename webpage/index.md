@@ -48,87 +48,87 @@ Schedule
 
 - Jan 24, Lecture 1
 
-    -- Fundamental ML problems
+    * Fundamental ML problems
     
-    -- Regression
+    * Regression
     
-    -- Classification 
+    * Classification 
     
 - Jan 24, **Homework 0** is assigned.
 
-    -- [Click here for the assignment](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM0/HM.pdf)
+    * [Click here for the assignment](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM0/HM.pdf)
     
-    -- Submission is not required. 
+    * Submission is not required. 
     
-    -- Deadline: finish it before the 1st Quiz. (Otherwise, you will probably fail.)
+    * Deadline: finish it before the 1st Quiz. (Otherwise, you will probably fail.)
     
 - Jan 24, **Homework 1** is assigned (available on Canvas).
     
-    -- Submission: submit to Canvas.
+    * Submission: submit to Canvas.
 
 - Jan 31, **CANCELED** due to the instructor's conference traveling
 
 - Feb 7, Lecture 2
     
-    -- Classification (cont.)
+    * Classification (cont.)
     
-    -- Regularization
+    * Regularization
     
 - Feb 14, Lecture 3
     
-    -- Dimensionality reduction
+    * Dimensionality reduction
     
-    -- Matrix computations
+    * Matrix computations
     
-    -- Neural network basics
+    * Neural network basics
         
 - Feb 14, **Homework 2** is assigned (available on Canvas).
     
-    -- Submission: submit to Canvas.
+    * Submission: submit to Canvas.
 
 - Feb 21, Lecture 4
 
-	-- Clustering
+	* Clustering
 	
-	-- Keras
+	* Keras
 	
-	-- Preparation for Quiz
+	* Preparation for Quiz
 	
-	-- Convolutional neural networks
+	* Convolutional neural networks
 
 - Feb 24, **Deadline for Homework 1**
 
 - Feb 28, **Quiz** (No lecture).
 
-	-- Coverage: linear algebra, optimization, and ML basics.
+	* Coverage: linear algebra, optimization, and ML basics.
 	
-	-- Policy: No electronic device. Printed material is allowed. 
+	* Policy: No electronic device. Printed material is allowed. 
 	
-	-- Sample questions: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Quiz1-Sample/Quiz.pdf)]
+	* Sample questions: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Quiz1-Sample/Quiz.pdf)]
 
 - Mar 7, Lecture 5
 	
-	-- Convolutional neural networks (cont.)
+	* Convolutional neural networks (cont.)
 	
 - Mar 7, **Homework 3** is assigned
 	
-	-- Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
+	* Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
 	
-    -- Submission: submit to Canvas.
+    * Submission: submit to Canvas.
     
     
 - Extended to Mar 8 (originally Mar 7), **Deadline for project proposal**
 
-	-- Submission: Everyone must submit a proposal to Canvas, even if it is teamwork.
+	* Submission: Everyone must submit a proposal to Canvas, even if it is teamwork.
 	
-	-- The finally participated competition is supposed be the same as in the proposal. If otherwise, convincing explanation and evidence must be provided to avoid penalty.
+	* The finally participated competition is supposed be the same as in the proposal. If otherwise, convincing explanation and evidence must be provided in the project document to avoid penalty.
 	
     
 - Mar 14, Lecture 6
 
-	-- Convolutional neural networks (cont.)
+	* Convolutional neural networks (cont.)
 	
-	-- Autoencoders
+	* Autoencoders
 	
 - Mar 14, **Deadline for Homework 2**
 
@@ -136,65 +136,69 @@ Schedule
 
 - Mar 28, Lecture 7
 
-	-- Autoencoders (cont.)
+	* Autoencoders (cont.)
 	
-	-- Recurrent neural networks
+	* Recurrent neural networks
 
 - Apr 4, Lecture 8
 
-	-- Recurrent neural networks (cont.)
+	* Recurrent neural networks (cont.)
 	
 - Apr 4, **Homework 4** is assigned
 	
-	-- Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
+	* Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
 	
-    -- Submission: submit to Canvas.
+    * Submission: submit to Canvas.
     
 - Apr 7, **Deadline for Homework 3**
 
 - Apr 11, Lecture 9
 
-	-- Recurrent neural networks (cont.)
+	* Recurrent neural networks (cont.)
 	
-	-- Recommender system
+	* Recommender system
 	
 - Apr 18, Lecture 10
 
-	-- Image generation
+	* Image generation
 	
 
 - Apr 21, **Deadline for signing up for project presentation**
 
-	-- Voluntary. 
+	* Voluntary. Up to 5 bonus scores to the total.
 	
-	-- Up to 5 bonus scores to the total.
-	
-    -- Submission: submit to Canvas.
+    * Submission: submit to Canvas.
+    
+    * Selected at most 7 teams.
+    
+    * Selection criteria: Is the problem challenging? Does your method have novelty? Do you have good preliminary results? Can the audience learn anything from your presentation?
 
 
 - Apr 25, Lecture 11
 
-	-- Image generation (cont.)
+	* Image generation (cont.)
+	
+	* Preparations for the final exam.
 	
 - May 2, **Final Exam**
 
-	-- Coverage: linear algebra, optimization, ML basics, neural network basics, CNN, RNN, Python programming, and Keras.
+	* Coverage: linear algebra, optimization, ML basics, neural network basics, CNN, RNN, Python programming, and Keras.
 	
-	-- Policy: No electronic device. Printed material is allowed. 
+	* Policy: No electronic device. Printed material is allowed. 
 	
 - May 4, **Deadline for Homework 4**
 
 - May 9, **Project Presentation**
 
-	-- Time and location: the same as the class.
+	* Time and location: the same as the class.
 	
-	-- Only the selected groups are required to attend.
+	* The selected groups are required to attend.
 	
-	-- If you are confident that you will get A without the bonus, you can email the instructor to cancel your presentation. But the cancelation request must be made 48 hours prior to the presentation.
+	* If you are confident that you will get A without the bonus, you can email the instructor to cancel your presentation. But the cancelation request must be made 48 hours prior to the presentation to avoid penalty.
 
 - May 19, **Deadline for Course Project**
 
-    -- Submission: submit to Canvas.
+    * Submission: submit to Canvas.
 
 
 
