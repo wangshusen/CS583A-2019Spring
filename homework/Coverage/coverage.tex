@@ -1,0 +1,479 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsmath,amsthm,amsfonts}
+\usepackage{latexsym,graphicx}
+\usepackage{fullpage,color}
+\usepackage{url,hyperref}
+\usepackage{natbib}
+\usepackage{graphicx,subfigure}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{color}
+
+\numberwithin{equation}{section}
+
+\pagestyle{plain}
+
+\setlength{\oddsidemargin}{0in}
+\setlength{\topmargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{8.5in}
+
+\newtheorem{fact}{Fact}[section]
+\newtheorem{question}{Question}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{theorem}[lemma]{Theorem}
+\newtheorem{assumption}[lemma]{Assumption}
+\newtheorem{corollary}[lemma]{Corollary}
+\newtheorem{prop}[lemma]{Proposition}
+\newtheorem{claim}{Claim}[section]
+\newtheorem{remark}{Remark}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{prob}{Problem}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{property}{Property}[section]
+
+\def\A{{\bf A}}
+\def\a{{\bf a}}
+\def\B{{\bf B}}
+\def\bb{{\bf b}}
+\def\C{{\bf C}}
+\def\c{{\bf c}}
+\def\D{{\bf D}}
+\def\d{{\bf d}}
+\def\E{{\bf E}}
+\def\e{{\bf e}}
+\def\F{{\bf F}}
+\def\f{{\bf f}}
+\def\g{{\bf g}}
+\def\h{{\bf h}}
+\def\G{{\bf G}}
+\def\H{{\bf H}}
+\def\I{{\bf I}}
+\def\K{{\bf K}}
+\def\k{{\bf k}}
+\def\LL{{\bf L}}
+\def\M{{\bf M}}
+\def\m{{\bf m}}
+\def\N{{\bf N}}
+\def\n{{\bf n}}
+\def\PP{{\bf P}}
+\def\Q{{\bf Q}}
+\def\q{{\bf q}}
+\def\R{{\bf R}}
+\def\rr{{\bf r}}
+\def\S{{\bf S}}
+\def\s{{\bf s}}
+\def\T{{\bf T}}
+\def\tt{{\bf t}}
+\def\U{{\bf U}}
+\def\u{{\bf u}}
+\def\V{{\bf V}}
+\def\v{{\bf v}}
+\def\W{{\bf W}}
+\def\w{{\bf w}}
+\def\X{{\bf X}}
+\def\x{{\bf x}}
+\def\Y{{\bf Y}}
+\def\y{{\bf y}}
+\def\Z{{\bf Z}}
+\def\z{{\bf z}}
+\def\0{{\bf 0}}
+\def\1{{\bf 1}}
+
+
+
+\def\AM{{\mathcal A}}
+\def\CM{{\mathcal C}}
+\def\DM{{\mathcal D}}
+\def\EM{{\mathcal E}}
+\def\GM{{\mathcal G}}
+\def\FM{{\mathcal F}}
+\def\IM{{\mathcal I}}
+\def\JM{{\mathcal J}}
+\def\KM{{\mathcal K}}
+\def\LM{{\mathcal L}}
+\def\NM{{\mathcal N}}
+\def\OM{{\mathcal O}}
+\def\PM{{\mathcal P}}
+\def\SM{{\mathcal S}}
+\def\TM{{\mathcal T}}
+\def\UM{{\mathcal U}}
+\def\VM{{\mathcal V}}
+\def\WM{{\mathcal W}}
+\def\XM{{\mathcal X}}
+\def\YM{{\mathcal Y}}
+\def\RB{{\mathbb R}}
+\def\RBmn{{\RB^{m\times n}}}
+\def\EB{{\mathbb E}}
+\def\PB{{\mathbb P}}
+
+\def\TX{\tilde{\bf X}}
+\def\TA{\tilde{\bf A}}
+\def\tx{\tilde{\bf x}}
+\def\ty{\tilde{\bf y}}
+\def\TZ{\tilde{\bf Z}}
+\def\tz{\tilde{\bf z}}
+\def\hd{\hat{d}}
+\def\HD{\hat{\bf D}}
+\def\hx{\hat{\bf x}}
+\def\nysA{{\tilde{\A}_c^{\textrm{nys}}}}
+
+\def\alp{\mbox{\boldmath$\alpha$\unboldmath}}
+\def\bet{\mbox{\boldmath$\beta$\unboldmath}}
+\def\epsi{\mbox{\boldmath$\epsilon$\unboldmath}}
+\def\etab{\mbox{\boldmath$\eta$\unboldmath}}
+\def\ph{\mbox{\boldmath$\phi$\unboldmath}}
+\def\pii{\mbox{\boldmath$\pi$\unboldmath}}
+\def\Ph{\mbox{\boldmath$\Phi$\unboldmath}}
+\def\Ps{\mbox{\boldmath$\Psi$\unboldmath}}
+\def\ps{\mbox{\boldmath$\psi$\unboldmath}}
+\def\tha{\mbox{\boldmath$\theta$\unboldmath}}
+\def\Tha{\mbox{\boldmath$\Theta$\unboldmath}}
+\def\muu{\mbox{\boldmath$\mu$\unboldmath}}
+\def\Si{\mbox{\boldmath$\Sigma$\unboldmath}}
+\def\si{\mbox{\boldmath$\sigma$\unboldmath}}
+\def\Gam{\mbox{\boldmath$\Gamma$\unboldmath}}
+\def\Lam{\mbox{\boldmath$\Lambda$\unboldmath}}
+\def\De{\mbox{\boldmath$\Delta$\unboldmath}}
+\def\Ome{\mbox{\boldmath$\Omega$\unboldmath}}
+\def\Pii{\mbox{\boldmath$\Pi$\unboldmath}}
+\def\varepsi{\mbox{\boldmath$\varepsilon$\unboldmath}}
+\newcommand{\ti}[1]{\tilde{#1}}
+\def\Ncal{\mathcal{N}}
+\def\argmax{\mathop{\rm argmax}}
+\def\argmin{\mathop{\rm argmin}}
+
+\def\ALG{{\AM_{\textrm{col}}}}
+
+\def\bias{\mathsf{bias}}
+\def\var{\mathsf{var}}
+\def\sgn{\mathsf{sgn}}
+\def\tr{\mathsf{tr}}
+\def\rk{\mathrm{rank}}
+\def\nnz{\mathsf{nnz}}
+\def\poly{\mathrm{poly}}
+\def\diag{\mathsf{diag}}
+\def\Diag{\mathsf{Diag}}
+\def\const{\mathrm{Const}}
+\def\st{\mathsf{s.t.}}
+\def\vect{\mathsf{vec}}
+\def\sech{\mathrm{sech}}
+
+\newcommand{\red}[1]{{\color{red}#1}}
+
+
+
+\def\argmax{\mathop{\rm argmax}}
+\def\argmin{\mathop{\rm argmin}}
+
+\newenvironment{note}[1]{\medskip\noindent \textbf{#1:}}%
+        {\medskip}
+
+
+\newcommand{\etal}{{\em et al.}\ }
+\newcommand{\assign}{\leftarrow}
+\newcommand{\eps}{\epsilon}
+
+\newcommand{\opt}{\textrm{\sc OPT}}
+\newcommand{\script}[1]{\mathcal{#1}}
+\newcommand{\ceil}[1]{\lceil #1 \rceil}
+\newcommand{\floor}[1]{\lfloor #1 \rfloor}
+
+
+
+\lstset{ %
+extendedchars=false,            % Shutdown no-ASCII compatible
+language=Python,                % choose the language of the code
+xleftmargin=1em,
+xrightmargin=1em,
+basicstyle=\footnotesize,    % the size of the fonts that are used for the code
+tabsize=3,                            % sets default tabsize to 3 spaces
+numbers=left,                   % where to put the line-numbers
+numberstyle=\tiny,              % the size of the fonts that are used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it's 1 each line
+                                % will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code   %
+keywordstyle=\color[rgb]{0,0,1},                % keywords
+commentstyle=\color[rgb]{0.133,0.545,0.133},    % comments
+stringstyle=\color[rgb]{0.627,0.126,0.941},      % strings
+backgroundcolor=\color{white}, % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,                 % adds a frame around the code
+%captionpos=b,                   % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+%title=\lstname,                 % show the filename of files included with \lstinputlisting;
+%                                % also try caption instead of title
+mathescape=true,escapechar=?    % escape to latex with ?..?
+escapeinside={\%*}{*)},         % if you want to add a comment within your code
+%columns=fixed,                  % nice spacing
+%morestring=[m]',                % strings
+%morekeywords={%,...},%          % if you want to add more keywords to the set
+%    break,case,catch,continue,elseif,else,end,for,function,global,%
+%    if,otherwise,persistent,return,switch,try,while,...},%
+}
+
+
+\begin{document}
+
+%\setlength{\fboxrule}{.5mm}\setlength{\fboxsep}{1.2mm}
+%\newlength{\boxlength}\setlength{\boxlength}{\textwidth}
+%\addtolength{\boxlength}{-4mm}
+
+
+\title{CS583A: Coverage of the Final Exam}
+
+\maketitle
+
+\date{~~}
+
+%\newpage
+%
+%\setcounter{tocdepth}{2}% Allow only \subsection in ToC
+%
+%\tableofcontents
+%\newpage
+
+%\section{Introduction}
+
+%\paragraph{Policy:}
+%Books and printed materials are allowed. Do not use electronic divice, including phone, laptop, and tablet.
+%
+%\paragraph{Hint:} (i) $\frac{\partial  e^a}{\partial a} = e^a$, (ii) $\frac{ \partial \log_e (a) }{\partial a  } = \frac{1}{a}$, (iii) $\frac{ \partial \frac{1}{a} }{\partial a  } = - \frac{1}{a^2}$, and (iv) $\frac{ \partial \cos (a) }{\partial a  } = - \sin (a)$.
+
+
+\section{Vector and matrix basics.}
+
+\begin{itemize}
+	\item 
+	Definitions of the $\ell_p$ vector norms for $p > 0$.
+	\item
+	Definitions and properties of the $\ell_p$-norm balls.
+	\item
+	Matrix trace and matrix norms.
+	\item
+	Singular value decomposition (SVD) and truncated SVD.
+	\item
+	The BLAS and LAPACK libraries for matrix computation. (What are level 1, 2, and 3 BLAS?)
+\end{itemize}
+
+
+
+\section{Scalar, vector, and matrix calculus.}
+
+\begin{itemize}
+	\item 
+	Derivative of a scalar w.r.t.\ a vector.
+	\item
+	Derivative of a vector w.r.t.\ a scalar.
+	\item
+	Derivative of a vector w.r.t.\ a vector.
+	\item
+	Derivative of a scalar w.r.t.\ a matrix.
+	\item
+	Chain rule.
+	\item
+	Always check the shape of a derivative!
+	\item
+	Subgradient and subdifferential.
+\end{itemize}
+
+
+
+
+\section{Convex sets, convex functions, and convex optimization.}
+
+
+\paragraph{Convex sets.}
+
+\begin{itemize}
+	\item 
+	Definition of convex set.
+	\item
+	Typical examples of convex set and nonconvex set.
+\end{itemize}
+
+
+
+
+\paragraph{Convex functions.}
+
+\begin{itemize}
+	\item
+	Definition of convex function.
+	\item
+	Definition of Hessian matrix. 
+	\item
+	Definition of positive semi-definite.
+	\item
+	For convex function, the Hessian matrix is everywhere positive semi-definite.
+\end{itemize}
+
+
+
+
+
+\paragraph{Convex and nonconvex optimization.}
+
+
+\begin{itemize}
+	\item
+	Definition of convex optimization.
+	\item
+	Definitions of objective function, constrains, and feasible set.
+	\item
+	For convex optimization, local optimum is global optimum.
+	\item
+	For convex optimization, the first-order optimality condition ($0 \in \partial f(\w^\star)$) implies $w^\star$ is a global minimum.
+	\item
+	For nonconvex optimization, there are saddle points.
+	\item
+	Definition of saddle points.
+	\item
+	For high-dimensional nonconvex optimization,
+	\#saddle points $\gg $ \#local minima $\gg$ \#global minima.
+\end{itemize}
+
+
+\section{Machine Learning Basics}
+
+\paragraph{The four ML tasks.}
+
+\begin{itemize}
+	\item
+	Definitions of regression, classification, clustering, and dimensionality reduction.
+	\item
+	Difference between regression and classification.
+	\item
+	Supervised learning and unsupervised learning.
+\end{itemize}
+
+
+
+
+
+\paragraph{Classification.}
+
+\begin{itemize}
+	\item
+	Binary classification and multi-class classification methods, e.g., logistic regression, support vector machine (SVM), softmax classifier, and $k$-nearest neighbor (KNN).
+	\item
+	Linear classifiers include logistic regression, SVM, and softmax classifier.
+	\item
+	Nonlinear classifiers include KNN, kernel SVM, neural networks.
+	\item
+	What classification method is most suitable if \#classes is millions?
+	\item
+	Standard evaluation metrics: accuracy, classification error rate, top 1 classification error, top 5 classification error.
+	\item
+	Evaluation metrics for class-imbalanced problems: true positive, true negative, false positive, false negative, ROC curve, precision, and recall.
+\end{itemize}
+
+
+
+
+
+
+
+\paragraph{Clustering.}
+
+\begin{itemize}
+	\item
+	Clustering tasks are unsupervised learning.
+	\item
+	The $k$-means clustering method (a combinatorial optimization model).
+	\item
+	Lloyd's algorithm for approximately solving the $k$-means model.
+\end{itemize}
+
+
+
+
+
+\paragraph{Dimensionality reduction.}
+
+\begin{itemize}
+	\item
+	Unsupervised learning methods: PCA and autoencoder.
+	\item
+	Supervised learning method: linear discriminant analysis.
+\end{itemize}
+
+
+
+
+\paragraph{Model capacity, overfitting, and underfitting.}
+
+\begin{itemize}
+	\item
+	What controls model capacity? E.g., degree of polynomial in polynomial regression, number of layers and width of layers in neural networks, etc.
+	\item
+	What are overfitting and underfitting?
+	\item
+	How to alleviate overfitting and underfitting?
+	More training samples, regularization, and data augmentation.
+\end{itemize}
+
+
+
+\paragraph{Hyper-parameters and cross-validation.}
+
+\begin{itemize}
+	\item
+	Examples of hyper-parameters:
+	degree of polynomials, regularization parameter, neural network structure, optimization algorithms.
+	(The model itself is a hyper-parameter.)
+	\item
+	Training set, validation set, and test set.
+	\item
+	Never use the test for hyper-parameter tuning.
+\end{itemize}
+
+
+
+\section{Convolutional Neural Networks}
+
+
+\paragraph{Convolutional operations}
+
+\begin{itemize}
+	\item
+	Definitions of patch, filter, matrix and tensor convolution, zero-padding, stride, etc.
+	\item
+	Calculate the output shape given the input shape, filter shape, stride, and zero-padding.
+\end{itemize}
+
+
+\paragraph{Convolutional neural networks}
+
+\begin{itemize}
+	\item
+	Using Keras to implement convolutional layer, pooling layer, flatten layer, and dense layers.
+	\item
+	Being able to choose appropriate activation functions.
+	\item
+	Given the input shape, filter number, filter shape, stride, zero-padding, and pool size, infer the \textbf{output shape } and \textbf{number of parameters}.
+	\item
+	Tricks for allevating overfitting: regularization, data augmentation, and pretrain (with the bottom layers frozen).
+	\item
+	Other tricks for improving the test error: multi-task learning and ensemble method.
+	\item
+	What is dropout? What is the best place to insert a dropout layer?
+	\item
+	How to properly use pretrain? How to use fine-tuning?
+	\item
+	What is feature scaling? What is batch normalization? 
+\end{itemize}
+
+
+
+
+\section{Recurrent Neural Networks}
+
+
+
+\end{document}
