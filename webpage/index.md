@@ -182,7 +182,7 @@ Schedule
 	
 - May 2, **Final Exam**
 
-	* Coverage: linear algebra, optimization, ML basics, neural network basics, CNN, RNN, Python programming, and Keras.
+	* Coverage: linear algebra, optimization, ML basics, neural network basics, CNN, RNN, Python programming, and Keras. [[Click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Coverage/coverage.pdf)] for the complete list.
 	
 	* Policy: No electronic device. Printed material is allowed. 
 	
