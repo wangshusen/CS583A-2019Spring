@@ -132,6 +132,12 @@ Schedule
 	
 - Mar 14, **Deadline for Homework 2**
 
+- Mar 15, **Homework 4 and Homework 5** are assigned
+	
+	* Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
+	
+    * Submission: submit to Canvas.
+
 - Mar 21, Spring Break, no class
 
 - Mar 28, Lecture 7
@@ -144,11 +150,6 @@ Schedule
 
 	* Recurrent neural networks (cont.)
 	
-- Apr 4, **Homework 4** is assigned
-	
-	* Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
-	
-    * Submission: submit to Canvas.
     
 - Apr 7, **Deadline for Homework 3**
 
@@ -182,11 +183,13 @@ Schedule
 	
 - May 2, **Final Exam**
 
-	* Coverage: linear algebra, optimization, ML basics, neural network basics, CNN, RNN, Python programming, and Keras. [[Click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Coverage/coverage.pdf)] for the complete list.
+	* Coverage: linear algebra, optimization, ML basics, neural network basics, CNN, RNN, Python programming, Keras, and content in the textbook. [[Click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Coverage/coverage.pdf)] for the list.
 	
 	* Policy: No electronic device. Printed material is allowed. 
 	
 - May 4, **Deadline for Homework 4**
+
+- May 5, **Deadline for Homework 5**
 
 - May 9, **Project Presentation**
 
