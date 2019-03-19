@@ -142,6 +142,8 @@ Schedule
 
 - Mar 28, Lecture 7
 
+	* Optimization [[read this](https://github.com/wangshusen/CS583A-2019Spring/raw/master/reading/Logistic/Logistic.pdf)]
+	
 	* Autoencoders (cont.)
 	
 	* Recurrent neural networks
@@ -149,7 +151,6 @@ Schedule
 - Apr 4, Lecture 8
 
 	* Recurrent neural networks (cont.)
-	
     
 - Apr 7, **Deadline for Homework 3**
 
@@ -161,7 +162,9 @@ Schedule
 	
 - Apr 18, Lecture 10
 
-	* Image generation
+	* Adversarial robustness
+	
+	* GANs
 	
 
 - Apr 21, **Deadline for signing up for project presentation**
@@ -177,7 +180,7 @@ Schedule
 
 - Apr 25, Lecture 11
 
-	* Image generation (cont.)
+	* Deep dream
 	
 	* Preparations for the final exam.
 	
@@ -284,36 +287,25 @@ This part introduces autoencoders for dimensionality reduction and image generat
     * Variational Autoencoders (VAEs) for image generation. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/8_AE_2.pdf)]
 
-5. **More image generation methods.** **(Optional, depending on the progress.)**
-This part covers two image generation approaches in addition to VAE.
-The training of neural networks takes fixed images (X) as inputs and optimize w.r.t. the weights (W). Conversely, one can fix the network's weights (W) and optimize w.r.t. the input X. In this way, new images are generated to maximize (or minimize) some function; the application includes attacking neural networks and deep dream.
-Another very different approach is the generative adversarial network (GAN).
 
-    * Attack neural networks. 
-    
-    * Deep dream. 
-        
-    * Generative adversarial network (GAN). 
-
-
-6. **Recurrent neural networks (RNNs).**
+5. **Recurrent neural networks (RNNs).**
 This part introduces RNNs and its applications in natural language processing (NLP).
 
     * Text processing.
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_1.pdf)] 
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/9_RNN_1.pdf)] 
        
     * RNN basics and LSTM.
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_2.pdf)]
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/9_RNN_2.pdf)]
     [[reference](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)]
    
     * Text generation.
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_3.pdf)]
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/9_RNN_3.pdf)]
     
     * Machine translation. 
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_4.pdf)]
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/9_RNN_4.pdf)]
     
     * Attention. 
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_5.pdf)]
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/9_RNN_5.pdf)]
     [[reference-1](https://distill.pub/2016/augmented-rnns/)]
     [[reference-2](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)]
     
@@ -322,12 +314,28 @@ This part introduces RNNs and its applications in natural language processing (N
     [[GloVe: Global Vectors for Word Representation](http://www.aclweb.org/anthology/D14-1162)]
     [[Neural Word Embedding as Implicit Matrix Factorization](https://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf)]
 
-7. **Recommender system.** **(Optional, depending on the progress.)**
+
+6. **Recommender system.** 
 This part is focused on the collaborative filtering approach to recommendation based on the user-item rating data.
 This part covers matrix completion methods and neural network approaches. 
 
     * Collaborative filtering. 
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/11_Recommender.pdf)]
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_Recommender.pdf)]
+
+
+7. **Adversarial Robustness.**
+This part introduces how to attack neural networks using adversarial examples and how to defend from the attack.
+
+	* White box attack and defend.
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/11_Adversarial.pdf)]
+    
+    * Further reading:
+    [[Adversarial Robustness - Theory and Practice](https://adversarial-ml-tutorial.org/)]
+    
+8. **Generative Adversarial Networks (GANs).** **(Optional, depending on the progress.)**
+
+
+
 
 
 Project
