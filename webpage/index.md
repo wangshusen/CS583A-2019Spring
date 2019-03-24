@@ -309,6 +309,9 @@ This part introduces RNNs and its applications in natural language processing (N
     [[reference-1](https://distill.pub/2016/augmented-rnns/)]
     [[reference-2](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)]
     
+    * Image caption generation. 
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/9_RNN_6.pdf)]
+    [[reference](https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/)]
     
     * Further reading: 
     [[GloVe: Global Vectors for Word Representation](http://www.aclweb.org/anthology/D14-1162)]
