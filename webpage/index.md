@@ -141,8 +141,6 @@ Schedule
 - Mar 21, Spring Break, no class
 
 - Mar 28, Lecture 7
-
-	* Optimization [[read this](https://github.com/wangshusen/CS583A-2019Spring/raw/master/reading/Logistic/Logistic.pdf)]
 	
 	* Autoencoders (cont.)
 	
@@ -151,6 +149,8 @@ Schedule
 - Apr 4, Lecture 8
 
 	* Recurrent neural networks (cont.)
+
+	* Optimization [[read this](https://github.com/wangshusen/CS583A-2019Spring/raw/master/reading/Logistic/Logistic.pdf)]
     
 - Apr 7, **Deadline for Homework 3**
 
