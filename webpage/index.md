@@ -149,14 +149,14 @@ Schedule
 - Apr 4, Lecture 8
 
 	* Recurrent neural networks (cont.)
-
-	* Optimization [[read this](https://github.com/wangshusen/CS583A-2019Spring/raw/master/reading/Logistic/Logistic.pdf)]
     
 - Apr 7, **Deadline for Homework 3**
 
 - Apr 11, Lecture 9
 
 	* Recurrent neural networks (cont.)
+	
+	* Optimization [[read this](https://github.com/wangshusen/CS583A-2019Spring/raw/master/reading/Logistic/Logistic.pdf)]
 	
 	* Recommender system
 	
@@ -312,6 +312,10 @@ This part introduces RNNs and its applications in natural language processing (N
     * Image caption generation. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/9_RNN_6.pdf)]
     [[reference](https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/)]
+    
+    * Transformer model: beyond RNNs. 
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/9_RNN_7.pdf)]
+    [[reference](https://arxiv.org/pdf/1706.03762.pdf)]
     
     * Further reading: 
     [[GloVe: Global Vectors for Word Representation](http://www.aclweb.org/anthology/D14-1162)]
