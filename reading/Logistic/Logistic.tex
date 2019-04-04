@@ -59,6 +59,7 @@
 \def\N{{\bf N}}
 \def\n{{\bf n}}
 \def\PP{{\bf P}}
+\def\pp{{\bf p}}
 \def\Q{{\bf Q}}
 \def\q{{\bf q}}
 \def\R{{\bf R}}
@@ -162,6 +163,7 @@
 \def\st{\mathsf{s.t.}}
 \def\vect{\mathsf{vec}}
 \def\sech{\mathrm{sech}}
+\def\sigmoid{\mathsf{sigmoid}}
 
 \newcommand{\red}[1]{{\color{red}#1}}
 
@@ -278,7 +280,7 @@ Let us assume the data are unidimensional ($d=1$).
 	\end{equation*}
 	The new features $\{ x_1', \cdots , x_n' \}$ are in the interval $[0, 1]$.
 	\item 
-	Min-max normalization performs the transformation:
+	Standardization performs the transformation:
 	\begin{equation*}
 	x_i' \: = \: \frac{ x_i - \mean (x) }{ \std (x) },
 	\quad \textrm{for } i = 1 , \cdots , n.
@@ -382,6 +384,161 @@ def objective(w, x, y, lam):
 	return loss + reg
 \end{lstlisting}
 \vspace{3mm}
+
+
+
+\subsection{Model derivation}
+
+
+Logistic regression has two forms; \eqref{eq:model} is one of the two.
+Here I derive both models using sigmoid function and cross-entropy function.
+You can skip this subsection without affecting reading the rest of this article.
+
+
+First, let us recall the definitions of sigmoid function and cross-entropy function.
+The sigmoid function maps a real number (between $-\infty$ and $+\infty$) to a positive number in $(0, 1)$.
+It is formally defined by 
+\begin{equation*}
+\sigmoid (z) 
+\: \triangleq \: \frac{1}{ 1 + e^{-z} } .
+\end{equation*}
+The discrete cross-entropy function $H (\pp , \q )$ measures the distance between the two distributions, 
+$\pp = [p_1, \cdots , p_k]^T$ and $\q= [q_1, \cdots , q_k]^T$.\footnote{Here, $\pp$ and $\q$ are $k$-dimensional vectors such that $p_1 , \cdots , p_k \geq 0$, $q_1 , \cdots , q_k \geq 0$, $p_1 + \cdots + p_k =1$, and $q_1 + \cdots + q_k =1$.}
+It is defined by
+\begin{equation*}
+H (\pp, \q ) 
+\: \triangleq \: - \sum_{i=1}^k p_i \log q_i .
+\end{equation*}
+Now we are ready to derive the logistic regression models.
+
+
+
+\paragraph{Logistic regression (variant 1).}
+The feature vector $\x \in \RB^d$ is the input to the model,
+and the label is $y \in \{0, 1\}$ (different from the model \eqref{eq:model}).
+The model has a trainable parameter vector $\w \in \RB^d$.
+The prediction is made by the sigmoid function of $\x^T \w$:
+\begin{equation*}
+f (\x)
+\: = \:
+\sigmoid ( \x^T \w ) 
+\: = \: \frac{1}{ 1 + \exp (-\x^T \w ) } .
+\end{equation*}
+The function $f( \x) \in (0, 1)$ is the predictor;
+you can think of it as a dense layer with sigmoid activation function.
+The function value is the probability that $\x$ is a positive sample;
+therefore, $1 - f(\x)$ is the probability that $\x$ is negative sample.
+
+Next, we use the label $y \in \{0, 1\}$ and the predictor $f (\x)$ to build a loss function.
+Let $\pp \in \RB^{2}$ be 
+\begin{equation*}
+\pp \: = \: 
+\left[
+\begin{array}{c}
+y \\
+1-y \\
+\end{array}
+\right].
+\end{equation*}
+Define $\q \in \RB^2$ as
+\begin{equation*}
+\q \: = \: 
+\left[
+\begin{array}{c}
+f (\x) \\
+1 - f (\x) \\
+\end{array}
+\right] .
+\end{equation*}
+Obviously, both $\pp$ and $\q$ are probability distributions.
+Note that $\q = \pp$ means perfect prediction;
+so we hope $\q$ is as close to $\pp$ as possible, and thus define the loss function as
+\begin{eqnarray*}
+\textrm{Loss} (\x, y)
+& = & H (\pp , \q )
+\; = \; - \big( p_1 \log q_1 + p_2 \log q_2 \big) \\
+& = & - \big[ y \log (f(\x)) + (1-y) \log (1-f(x))  \big] \\
+& = & y \cdot \log \big[ 1 + \exp (-\x^T \w) \big]
++ (1-y) \x^T \w + (1- y) \cdot \log \big[ 1 + \exp (-\x^T \w)  \big] \\
+& = & \log \big[ 1 + \exp (-\x^T \w) \big] + (1-y)  \x^T \w .
+\end{eqnarray*}
+Using all the $n$ training samples $(\x_1, y_1), \cdots , (\x_n, y_n)$, the final logistic regression model is
+\begin{equation*}
+\min_{\w \in \RB^d} \; \frac{1}{n} \sum_{i=1}^{n} \textrm{Loss} (\x_i, y_i ) ,
+\end{equation*}
+equivalently, 
+\begin{equation} \label{eq:model1}
+\min_{\w \in \RB^d} \; \frac{1}{n} \sum_{i=1}^{n} 
+\Big\{ \log \big[ 1 + \exp (-\x^T \w) \big]  + (1-y)  \x^T \w \Big\} .
+\end{equation}
+We can add the $\ell_1$ or $\ell_2$-norm regularization to the objective function.
+
+
+\paragraph{Logistic regression (variant 2).}
+This variant is the model \eqref{eq:model} we study throughout.
+Different from the other variant, here we require the label $y$ be either $+1$ or $-1$.
+The model has a trainable parameter vector $\w \in \RB^d$.
+We hope the linear function $\x^T \w$ is positive if $\x$ is a positive sample
+and it is negative if $\x$ is a negative sample.
+Equivalently, we hope $y \x^T \w$ is always positive.
+
+Based on such intuiations, 
+we do the transformation for the training samples:
+\begin{equation*}
+\tilde{\x} \: = \: y \x .
+\end{equation*}
+Therefore, we can always encourage  $\tilde{\x}^T \w$ to be positive.
+The prediction is made by the sigmoid function of $\tilde{\x}^T \w$:
+\begin{equation*}
+f (\x, y)
+\: = \:
+\sigmoid ( \tilde{\x}^T \w ) 
+\: = \:
+\sigmoid ( y {\x}^T \w ) 
+\: = \: \frac{1}{ 1 + \exp (-y \x^T \w ) } .
+\end{equation*}
+The predictor $f(\w)$ is the probability that $\tilde{\x}^T \w$ is positive;
+thus we encourage $f(\x)$ as close to 1 as possible.
+Let $\pp \in \RB^{2}$ be fixed as
+\begin{equation*}
+\pp \: = \: 
+\left[
+\begin{array}{c}
+1 \\
+0 \\
+\end{array}
+\right].
+\end{equation*}
+Define $\q \in \RB^2$ as
+\begin{equation*}
+\q \: = \: 
+\left[
+\begin{array}{c}
+f (\x, y) \\
+1 - f (\x, y) \\
+\end{array}
+\right] .
+\end{equation*}
+We define the loss function as
+\begin{eqnarray*}
+	\textrm{Loss} (\x, y)
+	& = & H (\pp , \q )
+	\; = \; - \big( p_1 \log q_1 + p_2 \log q_2 \big) 
+	\; = \; - p_1 \log q_1 \\
+	& = & - \log (f(\x, y)) 
+	\; = \; \log \big[ 1 + \exp ( - y \x^T \w ) \big].
+\end{eqnarray*}
+Using all the $n$ training samples $(\x_1, y_1), \cdots , (\x_n, y_n)$, the final logistic regression model is
+\begin{equation*}
+\min_{\w \in \RB^d} \; \frac{1}{n} \sum_{i=1}^{n} \textrm{Loss} (\x_i, y_i ) .
+\end{equation*}
+If we further adding the $\ell_2$-norm regularization, then it becomes exactly \eqref{eq:model}.
+
+
+\paragraph{Remark.}
+Variant 1 is what we actually use in deep learning for binary classification, because the combination of sigmoid actiavation and binary cross-entropy is exactly the model \eqref{eq:model1}.
+If we just do logistic regression itself, Variant 2 is easily to use than Variant 1.
+
 
 \section{Training (Numerical Optimization)}
 

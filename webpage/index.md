@@ -222,10 +222,14 @@ This part briefly introduces the fundamental ML problems-- regression, classific
     [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/2_Regression_2.pdf)]
     
     * Classification. 
-    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_1.pdf)]
-    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_2.pdf)] 
-    [[slides-3](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_3.pdf)] 
-    [[slides-4](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_4.pdf)]
+    
+        - Logistic regression: [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_1.pdf)]
+    
+        - SVM: [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_2.pdf)] 
+    
+        - Softmax classifier: [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_3.pdf)] 
+    
+        - KNN classifier: [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_4.pdf)]
     
     * Regularizations. 
     [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Optimization.pdf)]
@@ -241,6 +245,7 @@ This part briefly introduces the fundamental ML problems-- regression, classific
     * Scientific computing libraries.
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_DR_3.pdf)]
     
+    
 2. **Neural network basics.**
 This part covers the multilayer perceptron, backpropagation, and deep learning libraries, with focus on Keras.
 
@@ -251,18 +256,27 @@ This part covers the multilayer perceptron, backpropagation, and deep learning l
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/6_NeuralNet_2.pdf)]
     
     * Further reading:
-    [[activation functions](https://adl1995.github.io/an-overview-of-activation-functions-used-in-neural-networks.html)]
-    [[loss functions](https://isaacchanghau.github.io/post/loss_functions/)]
-    [[parameter initialization](https://isaacchanghau.github.io/post/weight_initialization/)]
-    [[optimization algorithms](https://isaacchanghau.github.io/post/parameters_update/)]
+    
+        - [[activation functions](https://adl1995.github.io/an-overview-of-activation-functions-used-in-neural-networks.html)]
+    
+        - [[loss functions](https://isaacchanghau.github.io/post/loss_functions/)]
+    
+        - [[parameter initialization](https://isaacchanghau.github.io/post/weight_initialization/)]
+    
+        - [[optimization algorithms](https://isaacchanghau.github.io/post/parameters_update/)]
+    
     
 3. **Convolutional neural networks (CNNs).**
 This part is focused on CNNs and its application to computer vision problems.
 
     * CNN basics.
-    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_1.pdf)]
-    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_2.pdf)]
-    [[slides-3](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_3.pdf)]
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_1.pdf)]
+    
+    * Tricks for improving test accuracy.
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_2.pdf)]
+    
+    * Feature scaling and batch normalization.
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_3.pdf)]
     
     * Advanced topics on CNNs. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_4.pdf)]
@@ -274,8 +288,10 @@ This part is focused on CNNs and its application to computer vision problems.
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_6.pdf)]
     
     * Further reading: 
-    [style transfer (Section 8.1, Chollet's book)]
-    [visualize CNN (Section 5.4, Chollet's book)]
+    
+        - [style transfer (Section 8.1, Chollet's book)]
+        
+        - [visualize CNN (Section 5.4, Chollet's book)]
 
 
 4. **Autoencoders.**
@@ -304,22 +320,24 @@ This part introduces RNNs and its applications in natural language processing (N
     * Machine translation. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/9_RNN_4.pdf)]
     
-    * Attention. 
+    * Image caption generation. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/9_RNN_5.pdf)]
+    [[reference](https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/)]
+    
+    * Attention. 
+    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/9_RNN_6.pdf)]
     [[reference-1](https://distill.pub/2016/augmented-rnns/)]
     [[reference-2](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)]
-    
-    * Image caption generation. 
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/9_RNN_6.pdf)]
-    [[reference](https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/)]
     
     * Transformer model: beyond RNNs. 
     [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/9_RNN_7.pdf)]
     [[reference](https://arxiv.org/pdf/1706.03762.pdf)]
     
     * Further reading: 
-    [[GloVe: Global Vectors for Word Representation](http://www.aclweb.org/anthology/D14-1162)]
-    [[Neural Word Embedding as Implicit Matrix Factorization](https://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf)]
+        
+        - [[GloVe: Global Vectors for Word Representation](http://www.aclweb.org/anthology/D14-1162)]
+        
+        - [[Neural Word Embedding as Implicit Matrix Factorization](https://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf)]
 
 
 6. **Recommender system.** 
@@ -338,6 +356,7 @@ This part introduces how to attack neural networks using adversarial examples an
     
     * Further reading:
     [[Adversarial Robustness - Theory and Practice](https://adversarial-ml-tutorial.org/)]
+    
     
 8. **Generative Adversarial Networks (GANs).** **(Optional, depending on the progress.)**
 
