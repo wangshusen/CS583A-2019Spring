@@ -255,19 +255,12 @@ The data are store as a feature matrix $\X \in \RB^{n\times d}$ and vector $\y \
 If the labels were in $\{0, 1\}$, instead of $\{-1, 1\}$, they must be converted to $\{-1, 1\}$.
 
 For example, you can use the Diabetes dataset which has $768$ samples and $d=8$ features.
-%We use $n=615$ samples for training and the rest for test.
 Diabetes is a binary classification dataset with labels either $+1$ or $-1$.
 The dataset can be downloaded from \url{https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/}.
 
 
 \subsection*{Feature scaling}
 
-%Before introducing feature scaling, let us see a motivating example.
-%Suppose a people's dataset has two features: $(\textrm{income}, \textrm{height})$.
-%\begin{itemize}
-%	\item 
-%	Using US dollar as metric, people's income has a mean of 
-%\end{itemize}
 
 Here we study two kinds of feature scaling: min-max normalization and standardization.
 Let us assume the data are unidimensional ($d=1$).
@@ -318,7 +311,7 @@ xnew = (x - mu) / sig
 
 
 Keep in mind that \textsf{xmin}, \textsf{xmax}, \textsf{mu}, and \textsf{sig} are all evaluated on the training set.
-We must do the same trainsformation to both training and test features.
+We must apply the same transformation to both training and test features.
 The following is what we actually do in practice.
 
 \vspace{3mm}
@@ -391,20 +384,20 @@ def objective(w, x, y, lam):
 
 
 Logistic regression has two forms; \eqref{eq:model} is one of the two.
-Here I derive both models using sigmoid function and cross-entropy function.
-You can skip this subsection without affecting reading the rest of this article.
+Here we derive both models using sigmoid function and cross-entropy function.
+The reader can skip this subsection without affecting reading the rest of this article.
 
 
 First, let us recall the definitions of sigmoid function and cross-entropy function.
-The sigmoid function maps a real number (between $-\infty$ and $+\infty$) to a positive number in $(0, 1)$.
-It is formally defined by 
+The sigmoid function maps a real number between $-\infty$ and $+\infty$ to a number between 0 and 1.
+It is defined by 
 \begin{equation*}
 \sigmoid (z) 
 \: \triangleq \: \frac{1}{ 1 + e^{-z} } .
 \end{equation*}
 The discrete cross-entropy function $H (\pp , \q )$ measures the distance between the two distributions, 
-$\pp = [p_1, \cdots , p_k]^T$ and $\q= [q_1, \cdots , q_k]^T$.\footnote{Here, $\pp$ and $\q$ are $k$-dimensional vectors such that $p_1 , \cdots , p_k \geq 0$, $q_1 , \cdots , q_k \geq 0$, $p_1 + \cdots + p_k =1$, and $q_1 + \cdots + q_k =1$.}
-It is defined by
+where the probabilities are $\pp = [p_1, \cdots , p_k]^T$ and $\q= [q_1, \cdots , q_k]^T$.\footnote{Here, $\pp$ and $\q$ are $k$-dimensional vectors such that $p_1 , \cdots , p_k \geq 0$, $q_1 , \cdots , q_k \geq 0$, $p_1 + \cdots + p_k =1$, and $q_1 + \cdots + q_k =1$.}
+The discrete cross-entropy is defined by
 \begin{equation*}
 H (\pp, \q ) 
 \: \triangleq \: - \sum_{i=1}^k p_i \log q_i .
@@ -430,7 +423,7 @@ The function value is the probability that $\x$ is a positive sample;
 therefore, $1 - f(\x)$ is the probability that $\x$ is negative sample.
 
 Next, we use the label $y \in \{0, 1\}$ and the predictor $f (\x)$ to build a loss function.
-Let $\pp \in \RB^{2}$ be 
+Let the ground truth be 
 \begin{equation*}
 \pp \: = \: 
 \left[
@@ -440,7 +433,7 @@ y \\
 \end{array}
 \right].
 \end{equation*}
-Define $\q \in \RB^2$ as
+Let the predicted probability distribution be captured by
 \begin{equation*}
 \q \: = \: 
 \left[
@@ -450,9 +443,11 @@ f (\x) \\
 \end{array}
 \right] .
 \end{equation*}
-Obviously, both $\pp$ and $\q$ are probability distributions.
-Note that $\q = \pp$ means perfect prediction;
-so we hope $\q$ is as close to $\pp$ as possible, and thus define the loss function as
+Because $\pp$ and $\q$ are all-positive vectors and $p_1 + p_1 = 1$ and $q_1 + q_2 = 1$,
+$\pp$ and $\q$ capture two probability  distributions.
+We hope the prediction $\q$ is as close to the ground truth $\pp$ as possible.
+We use the cross-entropy function to measure the distance between $\pp$ and $\q$,
+and the resulting loss function is
 \begin{eqnarray*}
 \textrm{Loss} (\x, y)
 & = & H (\pp , \q )
@@ -478,9 +473,8 @@ We can add the $\ell_1$ or $\ell_2$-norm regularization to the objective functio
 This variant is the model \eqref{eq:model} we study throughout.
 Different from the other variant, here we require the label $y$ be either $+1$ or $-1$.
 The model has a trainable parameter vector $\w \in \RB^d$.
-We hope the linear function $\x^T \w$ is positive if $\x$ is a positive sample
-and it is negative if $\x$ is a negative sample.
-Equivalently, we hope $y \x^T \w$ is always positive.
+We hope $\sgn (\x^T \w )$ is the same as $y$;
+equivalently, we hope $y \x^T \w$ is always positive.
 
 Based on such intuiations, 
 we do the transformation for the training samples:
@@ -499,7 +493,7 @@ f (\x, y)
 \end{equation*}
 The predictor $f(\w)$ is the probability that $\tilde{\x}^T \w$ is positive;
 thus we encourage $f(\x)$ as close to 1 as possible.
-Let $\pp \in \RB^{2}$ be fixed as
+Let the ground truth be fixed as
 \begin{equation*}
 \pp \: = \: 
 \left[
@@ -509,7 +503,7 @@ Let $\pp \in \RB^{2}$ be fixed as
 \end{array}
 \right].
 \end{equation*}
-Define $\q \in \RB^2$ as
+Let the prediction be
 \begin{equation*}
 \q \: = \: 
 \left[
@@ -519,7 +513,7 @@ f (\x, y) \\
 \end{array}
 \right] .
 \end{equation*}
-We define the loss function as
+We seek to make $q$ close to $\pp$ and thus define the loss function:
 \begin{eqnarray*}
 	\textrm{Loss} (\x, y)
 	& = & H (\pp , \q )
@@ -532,20 +526,20 @@ Using all the $n$ training samples $(\x_1, y_1), \cdots , (\x_n, y_n)$, the fina
 \begin{equation*}
 \min_{\w \in \RB^d} \; \frac{1}{n} \sum_{i=1}^{n} \textrm{Loss} (\x_i, y_i ) .
 \end{equation*}
-If we further adding the $\ell_2$-norm regularization, then it becomes exactly \eqref{eq:model}.
+If we further add the $\ell_2$-norm regularization, then the model becomes exactly \eqref{eq:model}.
 
 
 \paragraph{Remark.}
-Variant 1 is what we actually use in deep learning for binary classification, because the combination of sigmoid actiavation and binary cross-entropy is exactly the model \eqref{eq:model1}.
-If we just do logistic regression itself, Variant 2 is easily to use than Variant 1.
+Variant 1 is what we actually use in deep learning for binary classification, because the combination of sigmoid activation and binary cross-entropy is exactly the model \eqref{eq:model1}.
+If we just do logistic regression itself, Variant 2 is easier to use than Variant 1.
 
 
 \section{Training (Numerical Optimization)}
 
 
-Given the training data $\X$ and $\y$, we seek to solve the optimization model \eqref{eq:model} to find minimum $\w^\star = \argmin_{\w} Q (\w ; \X , \y )$.
-Logistic regression does not have close-formed solution, but we can use numerical optimization to arbitrarily approach $\w^\star$.
-In this section, we introdue gradient descent (GD), stochastic gradient descent (SGD), accelerated SGD, and mini-batch SGD; all of them can solve the logistic regression model \eqref{eq:model}.
+Given the training data $\X$ and $\y$, we seek to solve the optimization model \eqref{eq:model} to find the minimum $\w^\star = \argmin_{\w} Q (\w ; \X , \y )$.
+Logistic regression does not have a close-formed solution, but we can use numerical optimization to approach $\w^\star$ up to any precision.
+In this section, we introduce gradient descent (GD), stochastic gradient descent (SGD), accelerated SGD, and mini-batch SGD; all of them can solve the logistic regression model \eqref{eq:model}.
 
 
 
@@ -579,18 +573,18 @@ We finally apply the chain rule to get
 \: = \: \frac{ - y_i \x_i }{1+\exp({y_i \w^T \x_i})} .
 \end{equation}
 We can apply \eqref{eq:model} and \eqref{eq:grad1} to calculate the gradient of $Q$ (aka derivative of $Q (\w; \X , \y)$ w.r.t.\ $\w$):
-\begin{equation*}\label{eq:grad2}
+\begin{equation}\label{eq:grad2}
 \nabla Q (\w) 
 \: \triangleq \:
 \frac{ \partial \, Q (\w ; \X , \y) }{\partial \, \w }
 \: = \: \frac{1}{n} \sum_{i=1}^n \frac{ \partial \, l_i }{\partial \, \w } \, + \, \lambda \w 
 \: = \: \frac{1}{n} \sum_{i=1}^n \frac{ -y_i \x_i }{1+\exp({y_i \w^T \x_i})} \, + \, \lambda \w  .
-\end{equation*}
+\end{equation}
 
 
 
-The following Python code calculate the full gradient of $Q $ at $\w$.
-The code takes $\w$, $\X$, $\y$, and $\lambda$ and returns the full gradient.
+The following Python code calculates the full gradient of $Q $ at $\w$.
+The inputs are $\w$, $\X$, $\y$, and $\lambda$; the code returns the full gradient.
 
 \vspace{3mm}
 \begin{lstlisting}
@@ -619,15 +613,15 @@ def gradient(w, x, y, lam):
 \subsection{Gradient descent (GD)}
 
 Let $\w_0 \in \RB^d$ be the initialization of $\w$;
-for simple linear models, we typically use zero initialization.
+for simple linear models, zero initialization is typically used.
 The gradient of $Q$ at $\w_0$, denote 
 \begin{equation*}
 \nabla Q (\w_0)
 \: = \: \frac{1}{n} \sum_{i=1}^n \frac{ - y_i \x_i }{1+\exp({y_i \w_0^T \x_i})} \, + \, \lambda \w_0 ,
 \end{equation*} 
 is the steepest ascent direction at $\w_0$.
-In other words, if we want to increase the objective function $Q$ as much as possible, but we are only allow to move a tiny step away from $\w_0$, then we shall move along the gradient direction.
-Since we want to minimize the objective function $Q$, we can move in the opposite direction of $\nabla Q (\w_0)$.
+In other words, if we want to increase the objective function $Q$ as much as possible, but we are only allowed to move a tiny step away from $\w_0$, then we shall move $\w$ along the gradient direction.
+Since we want to minimize the objective function $Q$, we move $\w$ in the opposite direction of $\nabla Q (\w_0)$.
 So we update $\w$ by:
 \begin{equation*}
 \w_1 \: \longleftarrow \:
@@ -657,7 +651,7 @@ We can repeat this procedure so on and so forth till the gradient $\nabla Q (\w_
 
 
 \paragraph{Algorithm.}
-Gradient is illustrate in Figure~\ref{fig:gradient_descent} and formally described in the following.
+The gradient descent algorithm is illustrate in Figure~\ref{fig:gradient_descent} and formally described in the following.
 \begin{enumerate}
 	\item 
 	Initialize $\w_0$, e.g., $\w_0 = \0$;
@@ -678,10 +672,12 @@ Gradient is illustrate in Figure~\ref{fig:gradient_descent} and formally describ
 
 
 
-The following Python code implements the full gradient algorithm.
-User needs to specify the step size (aka learning rate) and maximal number of iterations (equal to epochs).
+
+
+The following Python code implements the full gradient descent algorithm.
+The user needs to specify the step size (aka learning rate) and the maximal number of iterations (equal to epochs).
 The default initialization of $\w$ is all-zero;
-however, if the user happen to have a good estimate of $\w$, then a warm start (using the estimate to initialize $\w$) will make the convergence faster.
+however, if the user happens to have a good estimate of $\w$, then a warm start (using the estimate to initialize $\w$) will make the convergence faster.
 
 \vspace{3mm}
 \begin{lstlisting}
@@ -725,12 +721,12 @@ For the GD algorithm,
 each iteration (one update of $\w$) goes one pass over all the $n$ training samples.
 Thus one iteration equals one epoch. 
 (Please refer to Section~\ref{sec:alg:terminologies} for the definition of terminologies.)
-Each iteration of GD must compute a full gradient, which costs $\OM (nd)$ time.
+Each iteration of GD computes a full gradient, which costs $\OM (nd)$ time.
 
 
 Let $\w^\star = \argmin_{\w} Q (\w ; \X , \y)$ be the global minimum;
 for $\lambda >0$, the global minimum is unique.
-Theories guarantees that with $\lambda > 0$ and $\alpha$ properly set,
+Theories guarantees that with $\lambda$ positive and $\alpha$ set properly,
 $\w_t$ converges to the global minimum $\w^\star$.
 That is, for a sufficiently large $T$ (may be several hundreds or thousands), 
 $\| \w_T - \w^\star \|_2$ is sufficiently small.
@@ -792,8 +788,8 @@ SGD is formally described in the following.
 
 The following Python code implements SGD for solving logistic regression.
 The function \textsf{stochastic\_objective\_gradient} calculates the value and gradient of $Q_i$ at $\w$.
-User needs to specify the step size (aka learning rate) and maximal number of  epochs.
-Difference from GD, the learning rate of SGD should be decreased after every epoch to guarantee convergence (see Line 32).
+The user needs to specify the step size (aka learning rate) and the maximal number of epochs.
+Different from GD, the learning rate of SGD should be decreased after every epoch to guarantee convergence (see Line 32).
 
 The actual implementation of SGD is slightly different from the above pseudo-code.
 In each iteration of the pseudo-code, an index $i$ is randomly sampled from the set $\{ 1, \cdots , n \}$.
@@ -833,7 +829,7 @@ def stochastic_objective_gradient(w, xi, yi, lam):
 
 
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{lstlisting}
 # SGD for solving logistic regression
 # Inputs:
@@ -883,20 +879,20 @@ w, objvals_sgd = sgd(x_train, y_train, lam, stepsize)
 
 
 \paragraph{Time complexity.}
-Each iteration of SGD merely uses one training sample $(\x_i, y_i)$ and costs $\OM (d)$ time.
-The per-iteration time complexity of SGD is tremendously smaller than GD, 
-but SGD takes much more iterations to converge.
-For SGD, one epoch equals to $n$ iterations.
-Measured by epochs, SGD's convergence is faster than GD.
+Each iteration of SGD uses merely one training sample $(\x_i, y_i)$ and costs $\OM (d)$ time.
+The per-epoch time complexity of SGD and GD are the same: both are $\OM (n d)$.
+If we plot objective function against \textbf{iterations}, then GD will obviously look better than SGD.
+However, using \textbf{iterations} as the $x$-axis is very unfair.
+If we instead plot objective function against \textbf{epochs}, then SGD typically looks faster than GD, at least in the beginning.
 
 
 \paragraph{Theory.}
 Why does SGD work?
 It is because stochastic gradient is an unbiased estimate of the full gradient:
 \begin{eqnarray*}
-\EB_{i} \big[ \nabla Q_i (\w ) \big]
-\: = \: \sum_{j=1}^n \frac{1}{n}  \nabla Q_j (\w ) 
-\: = \: \nabla Q (\w) .
+	\EB_{i} \big[ \nabla Q_i (\w ) \big]
+	\: = \: \sum_{j=1}^n \frac{1}{n}  \nabla Q_j (\w ) 
+	\: = \: \nabla Q (\w) .
 \end{eqnarray*}
 Here, the expectation is taken w.r.t.\ the random index $i$.
 Since $i$ can be any of $1, 2, \cdots , n$ with probability $\frac{1}{n}$,
@@ -912,7 +908,7 @@ The latter identity follows from \eqref{eq:sgrad1}.
 \subsection{Mini-batch SGD}
 
 
-Mini-batch SGD (MB-SGD) is straightforward extension of SGD.
+Mini-batch SGD (MB-SGD) is a straightforward extension of SGD.
 In the previous subsection, we defined the function
 \begin{equation*}
 Q_i (\w) \: = \: \log \Big( 1 + \exp \big( - y_i \w^T \x_i \big) \Big) + \frac{\lambda}{2} \|\w \|_2^2 
@@ -981,6 +977,15 @@ When mentioning SGD, Adagrad, and RMSProp in practical papers and projects, peop
 
 
 
+\begin{figure}[!h]
+	\centering
+	\vspace{3mm}
+	\subfigure[SGD]{\includegraphics[width=0.8\linewidth]{figures/sgd1.png}}
+	\subfigure[SGD with momentum]{\includegraphics[width=0.8\linewidth]{figures/sgd2.png}}
+	\caption{SGD and SGD with momentum. 
+		The figures are from \url{https://distill.pub/2017/momentum/}.}
+	\label{fig:sgd}
+\end{figure}
 
 \subsection{Accelerated GD and SGD}
 
@@ -994,36 +999,27 @@ in fact, following the steepest descending direction, the path will be zig-zag.
 
 
 
-\begin{figure}[!h]
-	\centering
-	\subfigure[SGD]{\includegraphics[width=0.8\linewidth]{figures/sgd1.png}}
-	\subfigure[SGD with momentum]{\includegraphics[width=0.8\linewidth]{figures/sgd2.png}}
-	\caption{SGD and SGD with momentum. 
-		The figures are from \url{https://distill.pub/2017/momentum/}.}
-	\label{fig:sgd}
-\end{figure}
 
 
-Accelerated gradient algorithm uses the historical descending directions to correct the current descending direction to circumvent the zig-zag like path.
+Accelerated gradient algorithm uses the historical gradient directions to correct the current descending direction and circumvent the zig-zag like path.
 Accelerated gradient algorithm can significantly speed up computation, especially for ill-conditioned problems.
 There are many accelerated algorithms based on the same idea.
-Figure~\ref{fig:sgd} shows the advantage of SGD without momentum.
+Figure~\ref{fig:sgd} shows the advantage of SGD with momentum.
 
 
-Here we describe only SGD with momentum; GD and MB-SGD with momentum are analogous.
+Here we describe SGD with momentum; GD and MB-SGD with momentum are analogous.
 SGD with momentum maintains a momentum vector $\z_t$
 and take the momentum direction instead of the stochastic gradient direction.
 Here is the update rule:
 \begin{eqnarray*}
-\z_{t+1} & \longleftarrow & \beta \z_t + \nabla Q_i (\w_t ), \\
-\w_{t+1} & \longleftarrow & \w_t - \alpha \z_{t+1} .
+	\z_{t+1} & \longleftarrow & \beta \z_t + \nabla Q_i (\w_t ), \\
+	\w_{t+1} & \longleftarrow & \w_t - \alpha \z_{t+1} .
 \end{eqnarray*}
 In the update rule,
 $\alpha > 0$ and $\beta \in (0, 1)$ are two hyper-parameters affecting the convergence rate.
 If the condition number is large (which is bad), $\beta$ should be set large, e.g., $\beta = 0.99$.
 For SGD with momentum, we can safely use fixed $\alpha$;
 differently, for SGD, $\alpha$ must decay after every epoch to guarantee convergence.
-.
 
 
 
@@ -1037,19 +1033,6 @@ The following code compares GD and SGD by plotting their objective function valu
 The output of the code is Figure~\ref{fig:compare_gd_sgd}.
 Besides the plot of objective against epochs,
 you can also plot the training accuracy against epochs or the validation accuracy against epochs.
-The followings are typical pitfalls:
-\begin{itemize}
-	\item 
-	Plot of objective or accuracy against runtime.
-	It is fine if the algorithms are implemented in Fortran, C, or C++.
-	However, if your implementation is Python, MATLAB, or R, such a comparison is very unfair to SGD, as for-loop  in Python, MATLAB, and R is very slow.
-	\item
-	Plot of objective or accuracy against iterations.
-	This is a very bad idea for comparing different algorithms.
-	For example, in Figure~\ref{fig:compare_gd_sgd}, if you change $x$-axis to iterations, GD takes around 50 iterations to converge, while SGD takes around 20,000 iterations;
-	however, such a comparison does not make any sense.
-\end{itemize}
-In sum, when you compare the convergence of two optimization algorithms, the most straightforward approach is plotting objective or accuracy against epochs.
 
 
 
@@ -1078,15 +1061,31 @@ fig.savefig('compare_gd_sgd.pdf', format='pdf', dpi=1200)
 
 
 
-
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.6\linewidth]{figures/compare_gd_sgd.pdf}
-	\caption{Plot of objective function value against epochs.
+	\caption{The plot of objective function value against epochs.
 		SGD is tremendously faster than GD in the first 2 epochs,
 		which means SGD can find a low-quality solution very efficiently.}
 	\label{fig:compare_gd_sgd}
 \end{figure}
+
+\newpage
+
+The followings are typical pitfalls which the reader must avoid:
+\begin{itemize}
+	\item 
+	Plot objective or accuracy against runtime.
+	It is fine if the algorithms are implemented in Fortran, C, or C++.
+	However, if your implementation is Python, MATLAB, or R, such a comparison is very unfair to SGD.
+	It is because for-loop in Python, MATLAB, and R is very slow.
+	\item
+	Plot objective or accuracy against iterations.
+	This is a very bad idea for comparing different algorithms.
+	For example, in Figure~\ref{fig:compare_gd_sgd}, if you change $x$-axis to iterations, GD takes around 50 iterations to converge, while SGD takes around 20,000 iterations;
+	however, such a comparison does not make any sense.
+\end{itemize}
+In sum, when you compare the convergence of two optimization algorithms, the most straightforward approach is plotting objective or accuracy against epochs.
 
 
 
@@ -1099,7 +1098,7 @@ fig.savefig('compare_gd_sgd.pdf', format='pdf', dpi=1200)
 
 
 \paragraph{Iteration.}
-One iteration means performing one update of the variable $\w$.
+One iteration means performing one update of the optimization variable (aka trainable parameters) $\w$.
 
 \paragraph{Epoch.}
 One epoch means every of the $n$ samples is visited exactly once by an algorithm.
@@ -1121,7 +1120,12 @@ then with a different setting, $\lambda = 10^{-6}$, we can use $\tilde{\w}$ as t
 
 
 \paragraph{Strongly convex function.}
-The function's graph is above a quadratic function.
+The function's graph is above a convex quadratic function.
+Formally speaking, a differentiable function $Q$ is $\mu$-strongly convex if
+\begin{equation*}
+Q (\v ) \: \geq \: Q (\w ) + \nabla Q (\w)^T (\v - \w  ) + \frac{\mu }{2}\| \v - \w \|_2^2 ,
+\end{equation*}
+for some $\mu > 0$ and all $\w$ and $\v$.
 
 
 \section{Making Predictions} \label{sec:predict}
@@ -1136,12 +1140,12 @@ f (\x')
 \: = \: \sgn \big(  \w^T \x' \big) .
 \end{equation*}
 
-{\bf Classification accuracy or error rate} are the commonly used evaluation metrics.
-For the class-balanced problems, that is, the numbers of postive samples and negative samples are comparable,
+{\bf Classification accuracy and error rate} are the commonly used evaluation metrics.
+For the class-balanced problems, that is, the numbers of positive samples and negative samples are comparable,
 we can safely use classification accuracy or error rate.
 
 However, for the {\bf class-imbalanced problems}, we shall never use such metrics.
-For example, suppose we want to apply logistic regression to dectect phishing emails,
+For example, suppose we want to apply logistic regression to detect phishing emails,
 and $0.1\%$ among all the emails are phishing emails.
 Then the classifier $f (\x') = -1$, which always makes non-phishing prediction disregarding the email content, will achieve a classification accuracy of $99.9\%$.
 Such a classifier is obviously useless, although its classification accuracy is extremely high.
@@ -1159,7 +1163,7 @@ The parameters can be directly learned from the training data using numerical op
 
 \paragraph{Hyper-parameters.}
 The other parameters, including the regularization parameter $\lambda$, learning rate $\alpha$, momentum parameter $\beta$, batch size $b$, and the number of epochs $T$, are called hyper-parameters.
-Their setting determines the parameters $\w$, which is why they are called hyper-parameters.
+Their setting determines the parameter vector $\w$, which is why $\lambda$, $\alpha$, $\beta$, $b$, and $T$ are called hyper-parameters.
 \begin{itemize}
 	\item 
 	Hyper-parameters in the model.
@@ -1173,7 +1177,7 @@ Their setting determines the parameters $\w$, which is why they are called hyper
 	Among them, $\alpha$, $\beta$, and $b$ affects the convergence rate and runtime, 
 	while $T$ determines the closeness to the global minimum.
 	For strongly convex models, the computed $\w$ may not depend on these hyper-parameters, especially when $T$ is sufficiently large.\footnote{For strongly convex models, the global minimum is unique, and the discussed algorithms all converge to the global minimum after sufficiently many epochs.
-		However, for nonconvex models such as deep neural networks, the solution $\w$ is a function of all the four hyper-parameters: $\alpha$, $\beta$, $b$, and $T$; a small change of any of them will leads to a different solution $\w$.}
+		However, for nonconvex models such as deep neural networks, the solution $\w$ is a function of all the four hyper-parameters: $\alpha$, $\beta$, $b$, and $T$; a small change of any of them will lead to a different solution $\w$.}
 \end{itemize}
 The hyper-parameters cannot be learned from the training data using numerical optimization.
 How can we determine the hyper-parameters?
@@ -1183,14 +1187,14 @@ How can we determine the hyper-parameters?
 
 \paragraph{Cross-validation.}
 If our goal is a low classification error rate on the test set, 
-then an intuitively idea would be try all the possible combinations of hyper-parameters and adopt the combination which {\bf minimizes the test error}.
+then an intuitive idea would try all the possible combinations of hyper-parameters and adopt the combination which {\bf minimizes the test error}.
 Unfortunately, this idea is very \textbf{wrong}.
 All the model parameters and hyper-parameters must be independent of the test data; it would be otherwise cheating.
 Keep in mind: Never use test data for hyper-parameter tuning!
 
 The right approach to hyper-parameter tuning is {\bf cross-validation}.
-Specifically, randomly partition the training data to two subset: one is training set, and the other is validation set.
-Learn the model parameters on training set, 
+Specifically, randomly partition the training data to two subsets: one is the training set, and the other is the validation set.
+Learn the model parameters on the training set, 
 and then evaluate the classification error on the validation set;
 the error is called validation error.
 You can try different combinations of hyper-parameters and choose the combination which minimizes the validation error.
@@ -1204,6 +1208,17 @@ by doing another random partitioning, another combination will be selected.
 
 
 
+\paragraph{$k$-fold cross-validation.}
+A better idea is to repeat the random partition many times to reduce variance,
+and it leads to the $k$-fold cross-validation.
+Figure~\ref{fig:cv} illustrates the 10-fold cross-validation.
+The training set is randomly partitioned to 10 subsets.
+The model is trained using 9 subsets and validated on the remaining subset;
+in this way, we get a validation error $E_1$.
+By doing the same for the other partitions, we will get the validation errors $E_2, E_3, \cdots , E_{10}$
+and the mean $E = \frac{1}{10} ( E_1 + \cdots + E_{10})$.
+Notice that one combination of hyper-parameters leads to one validation error $E$;
+we choose the combination of hyper-parameters (such as $\lambda$ and $\alpha$) that minimizes $E$.
 
 
 
@@ -1215,24 +1230,13 @@ by doing another random partitioning, another combination will be selected.
 	\label{fig:cv}
 \end{figure}
 
-\paragraph{$k$-fold cross-validation.}
-A better idea is to repeat the random partition many times to reduce variance,
-and it leads to the $k$-fold cross-validation.
-Figure~\ref{fig:cv} illustrates the 10-fold cross-validation.
-The training set is randomly partitioned to 10 subsets.
-The model is trained using 9 subsets and validated on the remaining subset;
-in this way, we get a validation error $E_1$.
-By doing the same for the other partitions, we will get the validation errors $E_2, E_3, \cdots , E_{10}$
-and the mean $E = \frac{1}{10} ( E_1 + \cdots + E_{10})$.
-Notice that one combination of hyper-parameters leads to one validation error $E$;
-we choose the combination that minimizes $E$.
 
 Hyper-parameter tuning is computation intensive.
 Using the $k$-fold cross-validation, we have to train the model for $k$ times, which leads to a significant increase in the computation.
 In addition, there may be many combinations of hyper-parameters, especially when the model and algorithm have many hyper-parameters.
 \textbf{If there are $c$ combinations of hyper-parameters and we use the $k$-fold cross-validation,
-then we will have to solve the model for $ck$ times!}
-Keep in mind, hyper-parameter tuning is the most time consuming step in machine learning.
+	then we will have to solve the model for $ck$ times!}
+Keep in mind, hyper-parameter tuning is the most time-consuming step in machine learning.
 
 
 \section{Problems}

@@ -158,10 +158,10 @@ Schedule
 	
 	* Optimization [[read this](https://github.com/wangshusen/CS583A-2019Spring/raw/master/reading/Logistic/Logistic.pdf)]
 	
-	* Recommender system
-	
 - Apr 18, Lecture 10
 
+	* Recommender system
+	
 	* Adversarial robustness
 	
 	* GANs
@@ -176,7 +176,6 @@ Schedule
     * Selected at most 7 teams.
     
     * Selection criteria: Is the problem challenging? Does your method have novelty? Do you have good preliminary results? Can the audience learn anything from your presentation?
-
 
 - Apr 25, Lecture 11
 
@@ -193,6 +192,10 @@ Schedule
 - May 4, **Deadline for Homework 4**
 
 - May 5, **Deadline for Homework 5**
+
+- May 9, 3:00 to 6:00 PM, **The Last Office Hours**
+
+	* Students can check their exam papers.
 
 - May 9, **Project Presentation**
 
