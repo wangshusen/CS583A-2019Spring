@@ -156,7 +156,7 @@ Schedule
 
 	* Recurrent neural networks (cont.)
 	
-	* Optimization [[read this](https://github.com/wangshusen/CS583A-2019Spring/raw/master/reading/Logistic/Logistic.pdf)]
+	* Optimization [[read this](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Logistic/paper/logistic.pdf)]
 	
 - Apr 18, Lecture 10
 
@@ -226,7 +226,7 @@ This part briefly introduces the fundamental ML problems-- regression, classific
     
     * Classification. 
     
-        - Logistic regression: [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_1.pdf)]
+        - Logistic regression: [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_1.pdf)] [[further reading](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Logistic/paper/logistic.pdf)]
     
         - SVM: [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_2.pdf)] 
     
