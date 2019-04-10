@@ -312,8 +312,54 @@ Which of the followings is the best improvement?
 
 
 
-
 \paragraph{Q5 (3\%).} 
+The following implements a convolutional neural network.
+The code has a major problem.
+How can we make correction?
+\begin{itemize}
+	\item[A.]
+	Remove the second convolutional layer (Lines 10 to 12), because it is not useful.
+	\item[B.]
+	Put the batch normalization layers (Lines 8 and 11) after the activations (Lines 9 and 12).
+	\item[C.]
+	Put the batch normalization layers (Lines 8 and 11) before the convolutions (Lines 7 and 10).
+	\item[D.]
+	Put the dropout layer (Line 18) before the first dense layer (Line 16).
+	\item[E.]
+	Put the dropout layer (Line 18) before the second dense layer (Line 17).
+\end{itemize}
+
+
+
+\begin{lstlisting}
+from keras import models
+from keras.layers import Input, Conv2D, MaxPooling2D, Activation
+from keras.layers import BatchNormalization, Flatten, Dense, Dropout
+
+input_img = Input((128, 128, 3))
+
+x = Conv2D(32, (3, 3))(input_img)
+x = BatchNormalization()(x)
+x = Activation('relu')(x)
+x = Conv2D(32, (3, 3))(x)
+x = BatchNormalization()(x)
+x = Activation('relu')(x)
+x = MaxPooling2D((2, 2))(x)
+
+x = Flatten()(x)
+x = Dense(128, activation='relu')(x)
+x = Dense(256, activation='relu')(x)
+x = Dropout(0.5)(x)
+x = Dense(10, activation='softmax')(x)
+
+model = models.Model(input_img, x)
+\end{lstlisting}
+\vspace{3mm}
+
+
+
+
+\paragraph{Q6 (3\%).} 
 {\bf (Fill the blank.)}
 The training set contains $1,000$ samples.
 We train a neural network using mini-batch SGD.
@@ -324,7 +370,7 @@ The batch size is \underline{~\qquad\qquad\qquad~}. \\
 
 
 
-\paragraph{Q6 (3\%).} 
+\paragraph{Q7 (3\%).} 
 {\bf (Fill the blank.)}
 What is the output of the following Python program?\\
 Answer: \underline{~\qquad\qquad\qquad~}
@@ -343,7 +389,7 @@ print(c.shape[0])
 \vspace{3mm}
 
 
-\paragraph{Q7 (12\%).} 
+\paragraph{Q8 (12\%).} 
 {\bf (Fill the blanks.)}
 The following code builds a neural network for sentiment analysis.
 \begin{itemize}
@@ -397,12 +443,12 @@ model.add(Dense(1, activation='sigmoid'))
 
 
 
-\paragraph{Q8 (12\%).} 
+\paragraph{Q9 (12\%).} 
 Read a piece of code regarding convolutional neural network and infer the output shapes and number of parameters.
 
 
 
-\paragraph{Q9 (10\%).} 
+\paragraph{Q10 (10\%).} 
 A matrix calculus question analogous to those in the quiz.
 
 
