@@ -186,6 +186,8 @@ Schedule
 
 	* Coverage: linear algebra, optimization, ML basics, neural network basics, CNN, RNN, Python programming, Keras, and content in the textbook. [[Click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Coverage/coverage.pdf)] for the list.
 	
+	* Sample questions: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Final-Sample/Final-Sample.pdf)]
+	
 	* Policy: No electronic device. Printed material is allowed. 
 	
 - May 4, **Deadline for Homework 4**

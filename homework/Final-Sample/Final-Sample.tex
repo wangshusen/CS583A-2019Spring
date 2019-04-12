@@ -242,7 +242,7 @@ Books and printed materials are allowed. Do not use electronic divice, including
 
 
 
-\paragraph{Q1 (3\%).} 
+\paragraph{Q1 (2\%).} 
 Let $\A$ be a real matrix and $\bb$ be a real vector.
 To compute the multiplication $\A \bb$ efficiently,
 which of the following libraries is the the best choice?
@@ -258,7 +258,7 @@ which of the following libraries is the the best choice?
 \end{itemize}
 
 
-\paragraph{Q2 (3\%).} 
+\paragraph{Q2 (2\%).} 
 The input shape is $18\times 18$, the pool size is $3\times 3$, and the pooling has no overlap (equivalently, the stride is $3\times 3$).
 Then what is the output shape of the pooling?
 \begin{itemize}
@@ -276,9 +276,21 @@ Then what is the output shape of the pooling?
 
 
 
-\paragraph{Q3 (3\%).} 
-You want to train a deep convolutional neural network using the CIFAR10 dataset.
-Which of the following tricks cannot be applied to improve the test error?
+\paragraph{Q3 (2\%).} 
+Let $\a = [1, 2, 3, 4, 5]^T$ be a vector.
+Let $\bb = \tanh (\a)$, where $\tanh$ is the hyperbolic tangent function.
+\underline{Then $\| \bb \|_2^2 < 1$.}
+\begin{itemize}
+	\item[A.]
+	The statement is true.
+	\item[B.]
+	The statement is false.
+\end{itemize}
+
+
+\paragraph{Q4 (2\%).} 
+We want to train a deep convolutional neural network using the CIFAR10 dataset.
+Which of the following tricks cannot be applied to improve the test accuracy?
 \begin{itemize}
 	\item[A.]
 	Using dropout regularization.
@@ -291,8 +303,49 @@ Which of the following tricks cannot be applied to improve the test error?
 \end{itemize}
 
 
+\paragraph{Q5 (2\%).} 
+We use mini-batch SGD with momentum to solve a softmax classifier model.
+We use different settings of batch size, $b$, and plot the \textbf{objective function value} against \textbf{epochs} in the figure below.
+All the other hyper-parameters in the algorithms have been fine-tuned.
+\underline{The figure indicates that MB-SGD with $b=8$ is very likely better than $b=64$ in this case.}
+\begin{itemize}
+	\item[A.]
+	The statement is true.
+	\item[B.]
+	The statement is false.
+\end{itemize}
 
-\paragraph{Q4 (3\%).} 
+%---------------------------------Figure---------------------------------%
+\begin{figure*}[h]
+	\begin{center}
+		\vspace{-5mm}
+		\includegraphics[width=0.5\textwidth]{figure/epochs.pdf}
+		\vspace{-4mm}
+	\end{center}
+\end{figure*}
+%---------------------------------Figure---------------------------------%
+
+
+
+\paragraph{Q6 (2\%).} 
+Suppose we seek to predict increment (either positive or negative) of a stock's price based on its prices in the past.
+Which of the followings is the best choice for the activation function of the output layer?
+\begin{itemize}
+	\item[A.]
+	No activation function (equivalently, the identity function).
+	\item[B.]
+	Rectified linear unit (ReLU).
+	\item[C.]
+	Logistic function.
+	\item[D.]
+	Softmax function.
+	\item[D.]
+	Tanh function.
+\end{itemize}
+
+
+
+\paragraph{Q7 (2\%).} 
 We use a deep learning model to predict whether a customer's review is positive or negative.
 We tokenize the reviews in the word-level and thus need an embedding layer to convert words to vectors.
 Upon the embedding layer, we build RNN layers and other types of layers.
@@ -312,7 +365,7 @@ Which of the followings is the best improvement?
 
 
 
-\paragraph{Q5 (3\%).} 
+\paragraph{Q8 (2\%).} 
 The following implements a convolutional neural network.
 The code has a major problem.
 How can we make correction?
@@ -357,9 +410,47 @@ model = models.Model(input_img, x)
 \vspace{3mm}
 
 
+\paragraph{Q9 (2\%).} 
+The following implements a convolutional neural network.
+The code is incorrect.
+How can we make correction?
+\begin{itemize}
+	\item[A.]
+	The activation in Line 7 should be removed.
+	\item[B.]
+	The activation layer (Line 9) should be removed.
+	\item[C.]
+	The batch normalization layer (Line 8) should be place after the pooling layer (Line 10).
+	\item[D.]
+	The dropout layer (Line 12) should be placed after Line 13 and before Line 14.
+\end{itemize}
 
 
-\paragraph{Q6 (3\%).} 
+\begin{lstlisting}
+from keras import models
+from keras.layers import Input, Conv2D, BatchNormalization, Activation
+from keras.layers import MaxPooling2D, Flatten, Dropout, Dense
+
+input_img = Input((28, 28, 3))
+
+x = Conv2D(32, (3, 3), activation='relu')(input_img)
+x = BatchNormalization()(x)
+x = Activation('relu')(x)
+x = MaxPooling2D((2, 2))(x)
+x = Flatten()(x)
+x = Dropout(0.5)(x)
+x = Dense(1000, activation='relu')(x)
+x = Dense(10, activation='relu')(x)
+
+model = models.Model(input_img, x)
+\end{lstlisting}
+\vspace{3mm}
+
+
+
+
+
+\paragraph{Q10 (2\%).} 
 {\bf (Fill the blank.)}
 The training set contains $1,000$ samples.
 We train a neural network using mini-batch SGD.
@@ -370,7 +461,7 @@ The batch size is \underline{~\qquad\qquad\qquad~}. \\
 
 
 
-\paragraph{Q7 (3\%).} 
+\paragraph{Q11 (2\%).} 
 {\bf (Fill the blank.)}
 What is the output of the following Python program?\\
 Answer: \underline{~\qquad\qquad\qquad~}
@@ -389,7 +480,7 @@ print(c.shape[0])
 \vspace{3mm}
 
 
-\paragraph{Q8 (12\%).} 
+\paragraph{Q12 (12\%).} 
 {\bf (Fill the blanks.)}
 The following code builds a neural network for sentiment analysis.
 \begin{itemize}
@@ -443,12 +534,73 @@ model.add(Dense(1, activation='sigmoid'))
 
 
 
-\paragraph{Q9 (12\%).} 
-Read a piece of code regarding convolutional neural network and infer the output shapes and number of parameters.
+
+
+\paragraph{Q13 (12\%).} 
+The following code builds a convolutional neural network.
+\begin{itemize}
+	\item 
+	Line 5 is a convolutional layer with $1\times 1$ convolutions. 
+	What is the output shape of this layer?\\
+	Answer: \underline{~\qquad\qquad\qquad~}
+	%ANSWER: 100, 100, 10
+	\item 
+	What is (roughly) the number of parameters in the convolutional layer (Line 5)?\\
+	Answer: \underline{~\qquad\qquad\qquad~}
+	%ANSWER: around 410
+	\item 
+	Line 8 is a convolutional layer with $3\times 3$ convolutions. 
+	What is the output shape of this layer?\\
+	Answer: \underline{~\qquad\qquad\qquad~}
+	%ANSWER: 100, 100, 10
+	\item 
+	What is (roughly) the number of parameters in the convolutional layer (Line 8)?\\
+	Answer: \underline{~\qquad\qquad\qquad~}
+	%ANSWER: around 910
+	\item 
+	Line 13 is a pooling layer. 
+	What is the output shape of this layer?\\
+	Answer: \underline{~\qquad\qquad\qquad~}
+	%ANSWER: 100, 100, 40
+	\item 
+	What is (roughly) the number of parameters in the pooling layer (Line 13)?\\
+	Answer: \underline{~\qquad\qquad\qquad~}
+	%ANSWER: 0
+\end{itemize}
 
 
 
-\paragraph{Q10 (10\%).} 
+
+
+\begin{lstlisting}
+from keras.layers import Input, Conv2D, MaxPooling2D, concatenate
+
+x_input = Input(shape=(100, 100, 40))
+
+tower1 = Conv2D(10, (1,1), padding='same', activation='relu')(x_input)
+
+tower2 = Conv2D(10, (1,1), padding='same', activation='relu')(x_input)
+tower2 = Conv2D(10, (3,3), padding='same', activation='relu')(tower2)
+
+tower3 = Conv2D(10, (1,1), padding='same', activation='relu')(x_input)
+tower3 = Conv2D(10, (5,5), padding='same', activation='relu')(tower3)
+
+tower4 = MaxPooling2D((3,3), strides=(1,1), padding='same')(x_input)
+tower4 = Conv2D(10, (1,1), padding='same', activation='relu')(tower4)
+
+x_output = concatenate([tower1, tower2, tower3, tower4], axis = 3)
+\end{lstlisting}
+\vspace{3mm}
+
+
+
+
+\paragraph{Q14 (6\%).} 
+A question based on the textbook.
+
+
+
+\paragraph{Q15 (10\%).} 
 A matrix calculus question analogous to those in the quiz.
 
 
