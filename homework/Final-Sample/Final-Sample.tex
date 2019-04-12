@@ -574,11 +574,6 @@ The following code builds a convolutional neural network.
 \end{itemize}
 
 
-\noindent
-(\textbf{Think of this question:} What if I specify \textsf{strides=2} in a convolutional layer? 
-What will be the output shape and number of parameters?)
-
-
 
 \begin{lstlisting}
 from keras.layers import Input, Conv2D, MaxPooling2D, concatenate
@@ -600,6 +595,11 @@ x_output = concatenate([tower1, tower2, tower3, tower4], axis = 3)
 \end{lstlisting}
 \vspace{3mm}
 
+
+
+\noindent
+(\textbf{Think of this question:} What if I specify \textsf{strides=2} in a convolutional layer? 
+What will be the output shape and number of parameters?)
 
 
 
