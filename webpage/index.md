@@ -23,6 +23,11 @@ Description
 
 - **The office hours on these dates are canceled: Jan 31, Feb 28**
 
+- Time change: 3-5PM, May 2 ==> 2-6PM, May 1
+
+- Time change: May 9 ==> both May 7 and 8
+
+
 **Contact the Instructor:**
 
 - For questions regarding grading, talk to the instructor during office hours or send him emails.
@@ -163,7 +168,7 @@ Schedule
 	
 	* Adversarial robustness
 	
-	* GANs
+	* Review the Quiz
 	
 
 - Apr 21, **Deadline for signing up for project presentation**
@@ -178,25 +183,37 @@ Schedule
 
 - Apr 25, Lecture 11
 
-	* Deep dream
+	* GANs
 	
 	* Preparations for the final exam.
 	
+- May 1, **Office Hours**
+
+	* <span style="color:red">Time change: 3-5PM, May 2 ==> 2-6PM, May 1</span> 
+
 - May 2, **Final Exam**
 
 	* Coverage: linear algebra, optimization, ML basics, neural network basics, CNN, RNN, Python programming, Keras, and content in the textbook. [[Click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Coverage/coverage.pdf)] for the list.
 	
 	* Sample questions: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Final-Sample/Final-Sample.pdf)]
 	
-	* Policy: No electronic device. Printed material is allowed. 
+	* Policy: No electronic device (except for electronic calculator). Printed material is allowed. 
 	
-- May 4, **Deadline for Homework 4**
+- May 4, **Deadline for Homework 4** (Extended to May 11)
 
-- May 5, **Deadline for Homework 5**
+- May 5, **Deadline for Homework 5** (Extended to May 11)
 
-- May 9, 3:00 to 6:00 PM, **The Last Office Hours**
+- May 7, 3:00 to 5:00 PM, Office Hours
 
 	* Students can check their exam papers.
+
+
+- May 8, 3:00 to 5:00 PM, Office Hours
+
+	* Students can check their exam papers.
+
+
+- May 9, Office Hours **Canceled** due to the faculty retreat.
 
 - May 9, **Project Presentation**
 
@@ -227,7 +244,9 @@ This part briefly introduces the fundamental ML problems-- regression, classific
     
     * Classification. 
     
-        - Logistic regression: [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/3_Classification_1.pdf)] [[further reading](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Logistic/paper/logistic.pdf)]
+        - Logistic regression: 
+        [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/3_Classification_1.pdf)] 
+        [[lecture note](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Logistic/paper/logistic.pdf)]
     
         - SVM: [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/3_Classification_2.pdf)] 
     
@@ -362,7 +381,9 @@ This part introduces how to attack neural networks using adversarial examples an
     [[Adversarial Robustness - Theory and Practice](https://adversarial-ml-tutorial.org/)]
     
     
-8. **Generative Adversarial Networks (GANs).** **(Optional, depending on the progress.)**
+8. **Generative Adversarial Networks (GANs).** 
+
+    * DC-GAN [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/12_GAN.pdf)]
 
 
 
@@ -376,7 +397,7 @@ Every student must participate in one [Kaggle competition](https://www.kaggle.co
    
 - **Teamwork policy**: You had better work on your own project. Teamwork (up to 3 students) is allowed if the competition has a heavy workload; the workload and team size will be considered in the grading.
 
-- **Grading policy**: see the tentative evaluation form [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/Evaluation/Evaluation.pdf)]
+- **Grading policy**: See the evaluation form [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/Evaluation/Evaluation.pdf)]. An OK but not excellent work typically lose 3 points.
     
 
 
@@ -421,6 +442,6 @@ Grading Policy
 
 - Late submissions of assignments or project document for whatever reason will be punished. 1\% of the score of an assignment/project will be deducted per day. For example, if an assignment is submitted 15 days and 1 minute later than the deadline (counted as 16 days) and it gets a grade of 95\%, then the score after the deduction will be: 95\% - 16\% = 79\%.
 
-- June 1 is the firm deadline for all the homework and the course project. Submissions later than June 1 will not be graded.
+- May 20 (not June 1 any more) is the firm deadline for all the homework and the course project. Submissions later than May 20 will not be graded.
 
 
