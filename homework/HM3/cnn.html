@@ -11797,8 +11797,18 @@ div#notebook {
 </li>
 <li><p>Submit the link to this .HTML file to Canvas.</p>
 <ul>
-<li>E.g., <a href="https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM3/cnn.html">https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM3/cnn.html</a></li>
+<li>Example: <a href="https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM3/cnn.html">https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM3/cnn.html</a></li>
 </ul>
+</li>
+</ol>
+<h2 id="Requirements:">Requirements:<a class="anchor-link" href="#Requirements:">&#182;</a></h2><ol>
+<li><p>You can use whatever CNN architecture, including VGG, Inception, and ResNet. However, you must build the networks layer by layer. You must NOT import the archetectures from <code>keras.applications</code>.</p>
+</li>
+<li><p>Make sure <code>BatchNormalization</code> is between a <code>Conv</code>/<code>Dense</code> layer and an <code>activation</code> layer.</p>
+</li>
+<li><p>If you want to regularize a <code>Conv</code>/<code>Dense</code> layer, you should place a <code>Dropout</code> layer <strong>before</strong> the <code>Conv</code>/<code>Dense</code> layer.</p>
+</li>
+<li><p>An accuracy above 70% is considered reasonable. An accuracy above 80% is considered good. Without data augmentation, achieving 80% accuracy is difficult.</p>
 </li>
 </ol>
 
