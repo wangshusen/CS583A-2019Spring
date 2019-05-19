@@ -20,7 +20,7 @@ Submissions and Grading
 
 - **Source code**. You must create a Github repository (or multiple repositories). Submit the URL of the repository to Canvas. Do NOT submit zip/tar packages.
 
-- **Document**. You must create a PDF document using LaTeX, Markdown, or Jupyper notebook; here is [a Latex template](https://github.com/wangshusen/CS583A-2019Spring/tree/master/project/LatexTemplate) and [a sample report](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/LatexTemplate/project.pdf). If you do not have LaTeX editor, you can use the online editor [OverLeaf](https://www.overleaf.com/read/xfbtvycjndyg). Please make the document short and concise! Page limit: 3~10 pages. Put the PDF file in your Github repository and submit the URL to Canvas.
+- **Document**. You must create a PDF document using LaTeX, Markdown, or Jupyper notebook; here is [a LaTeX template](https://github.com/wangshusen/CS583A-2019Spring/tree/master/project/LatexTemplate) and [a sample report](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/LatexTemplate/project.pdf). If you do not have LaTeX editor, you can use the online editor [OverLeaf](https://www.overleaf.com/read/xfbtvycjndyg). Please make the document short and concise! Page limit: 3~10 pages. Put the PDF file in your Github repository and submit the URL to Canvas.
 
 - **Scores and ranking.** Report your scores and ranking in the public leaderboard and the private leaderboard (if available). 
 
