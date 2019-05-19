@@ -15,14 +15,16 @@ Requirements
 - You must compare your fancy methods with simple baselines, e.g., random guess, all-positive, all-negative, simple linear models, and beat the baselines. The evaluation metric must be the one required by the competition.
 
 
-Submissions
+Submissions and Grading
 ---------
 
 - **Source code**. You must create a Github repository (or multiple repositories). Submit the URL of the repository to Canvas. Do NOT submit zip/tar packages.
 
-- **Report**. You must create a PDF document using LaTeX, Markdown, or Jupyper notebook; here is [a Latex template](https://github.com/wangshusen/CS583A-2019Spring/tree/master/project/LatexTemplate) and [a sample report](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/LatexTemplate/project.pdf). Please make the document short and concise! Page limit: 3~10 pages. Put the PDF file in your Github repository and submit the URL to Canvas.
+- **Document**. You must create a PDF document using LaTeX, Markdown, or Jupyper notebook; here is [a Latex template](https://github.com/wangshusen/CS583A-2019Spring/tree/master/project/LatexTemplate) and [a sample report](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/LatexTemplate/project.pdf). If you do not have LaTeX editor, you can use the online editor [OverLeaf](https://www.overleaf.com/read/xfbtvycjndyg). Please make the document short and concise! Page limit: 3~10 pages. Put the PDF file in your Github repository and submit the URL to Canvas.
 
-- **Scores and ranking.** Report your scores and ranking in the public leaderboard and the private leaderboard (if available).
+- **Scores and ranking.** Report your scores and ranking in the public leaderboard and the private leaderboard (if available). 
+
+- The average grade is around $17 / 20 = 85\%$. It means on average, you will lose 3 points. Try to submit your project to Canvas 2 weeks before the deadline so that you will get feedbacks from the instructor and will be able to make corrections.
 
 
 Teamwork
