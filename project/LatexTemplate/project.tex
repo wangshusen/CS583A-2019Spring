@@ -20,19 +20,8 @@
 \setlength{\textwidth}{6.5in}
 \setlength{\textheight}{8.5in}
 
-\newtheorem{fact}{Fact}[section]
-\newtheorem{question}{Question}[section]
 \newtheorem{lemma}{Lemma}[section]
 \newtheorem{theorem}[lemma]{Theorem}
-\newtheorem{assumption}[lemma]{Assumption}
-\newtheorem{corollary}[lemma]{Corollary}
-\newtheorem{prop}[lemma]{Proposition}
-\newtheorem{claim}{Claim}[section]
-\newtheorem{remark}{Remark}[section]
-\newtheorem{definition}{Definition}[section]
-\newtheorem{prob}{Problem}[section]
-\newtheorem{conjecture}{Conjecture}[section]
-\newtheorem{property}{Property}[section]
 
 \def\A{{\bf A}}
 \def\a{{\bf a}}
@@ -105,7 +94,6 @@
 \def\XM{{\mathcal X}}
 \def\YM{{\mathcal Y}}
 \def\RB{{\mathbb R}}
-\def\RBmn{{\RB^{m\times n}}}
 \def\EB{{\mathbb E}}
 \def\PB{{\mathbb P}}
 
@@ -230,6 +218,7 @@ The training set is well-balanced: $n_{\textrm{dog}} = 12,500$ and $n_{\textrm{c
 
 
 
+[If your project is different from your proposal, add a section here to justify. Without a convincing justification, you may lose 2 points.]
 
 
 \section{Solution}
@@ -281,11 +270,58 @@ Figure~\ref{fig:convergence} plots the the convergence curves on 80\% training d
 \section{Compared Methods}
 
 
-[Try different methods (with brief descriptions) and report their performance.]
+[Hint: Try different methods (with brief descriptions) and report their performance.
+You will lose up to 3 points if you do not compare with baselines.
+Here are examples.]
+
+
+\paragraph{ResNet.}
+We use the ResNet50 model provided by Keras. Its parameters are pretrained on the ImageNet dataset. The training and validation accuracies are respective 80.0\% and 75.0\%.
+
+
+
+\paragraph{Fully-connected neural network.}
+We implemented a 3-layer fully-connected neural network.
+The width of the layers (from bottom to top) are respectively 256, 512, and 10.
+We apply dropout/batch normalization to the second layer.
+The training and validation accuracies are respective 80.0\% and 75.0\%.
+
+
+
+
+\paragraph{Random forest.}
+We use the random forest model provided by SKlearn.
+We set xxx to xxx.
+The training and validation accuracies are respective 80.0\% and 75.0\%.
+
+
+
+
+\paragraph{Advanced tricks.}
+Our finally adopted method is a siamese network with 4 convolutional layers.
+We applied the following tricks.
+\begin{itemize}
+	\item 
+	Data augmentation.
+	Without data augmentation, the training and validation accuracies are respective 80.0\% and 75.0\%.
+	With data augmentation, the training and validation accuracies are respective 82.0\% and 77.0\%.
+	\item 
+	Over-sampling.
+	Because the data is imbalanced (much more negative samples than positive samples),
+	we tried over-sampling and under-sampling and found over-sampling works better.
+	Using both data augmentation and over-sampling, the training and validation accuracies are improved to 85.0\% and 79.0\%.
+	\item
+	Ensemble.
+	Using data augmentation, over-sampling, and ensemble, the training and validation accuracies are improved to 87.0\% and 83.0\%.
+\end{itemize}
 
 
 
 \section{Outcome}
+
+[Top 30\% is considered good.
+Top 30 to 60\% is considered medium, and you may lose 1 point.
+Bottom 40\% is considered low, and you may lose 2 points.]
 
 
 We participated in an active competition.
